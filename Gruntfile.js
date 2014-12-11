@@ -35,13 +35,14 @@ module.exports = function(grunt) {
 
       others: {
         files: ['**/*.html', '**/*.js'],
-        tasks: ['copy']
+        tasks: ['newer:copy']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-sass');
 
   grunt.registerTask('build', ['copy','sass']);
