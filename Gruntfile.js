@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     sass: {
       build: {
         files: {
-          'build/css/app.css': 'source/scss/app.scss'
+          'build/css/app.css': 'source/sass/app.sass'
         },
         options: {
           bundleExec: true,
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       grunt: { files: ['Gruntfile.js'] },
 
       sass: {
-        files: 'source/scss/**/*.scss',
+        files: 'source/sass/**/*.sass',
         tasks: ['sass']
       },
 
