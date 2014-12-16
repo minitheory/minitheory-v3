@@ -49,7 +49,7 @@ module.exports = function(grunt) {
       },
 
       others: {
-        files: ['**/*.js'],
+        files: ['img/**.*', '**/*.js'],
         tasks: ['newer:copy']
       }
     }
