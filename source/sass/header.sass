@@ -11,18 +11,20 @@ ul.site-navigation
     margin-right: rem-calc(30px)
     text-transform: uppercase
     a
+      +transition(all 0.25s)
       color: $text-dark
       &:hover
+        +transition(all 0.25s)
         border-bottom: solid 2px $accent
         color: $accent
         padding-bottom: rem-calc(6px)
       &.button
+        +transition(all 0.25s)
         border: solid 1px $text-dark
         border-radius: $global-radius
         padding: rem-calc(15px) rem-calc(20px)
-        +transition(all 0.2s)
         &:hover
+          +transition(all 0.25s)
           border-color: $accent
           background-color: $accent
           color: $white
-          +transition(all 0.2s)
