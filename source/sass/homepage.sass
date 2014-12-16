@@ -22,9 +22,23 @@
 .page-section
   padding: rem-calc(90px) 0
 
+.services.page-section
+  text-align: center
+
 .clients.page-section
   +background-image(linear-gradient(to right, #83A4D4, #A0D7DA))
   color: $white
+  text-align: center
+  h2
+    color: $white
+  ul.clients-list
+    margin-left: 0
+    > li
+      display: inline-block
+      list-style: none
+      padding-top: rem-calc(50)
+      text-align: center
+      width: 20%
 
 .contact.page-section
   background-color: $dark-bg
