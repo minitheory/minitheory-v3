@@ -11,6 +11,10 @@
 @import header
 @import homepage
 
+span.break:before
+  content: '\A'
+  white-space: pre
+
 a.button
   +transition(all 0.25s)
   border: solid 1px $accent
