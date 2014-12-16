@@ -28,6 +28,7 @@ module.exports = function(grunt) {
         },
         options: {
           bundleExec: true,
+          compass: true,
           loadPath: ['bower_components/foundation/scss'],
           style: 'compressed'
         }
