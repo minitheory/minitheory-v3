@@ -4,10 +4,24 @@ module.exports = function(grunt) {
 
     copy: {
       build: {
-        expand: true,
-        cwd: 'source/',
-        src: ['img/**', 'js/**'],
-        dest: 'build/'
+        files: [{
+          expand: true,
+          cwd: 'source/',
+          src: ['img/**', 'js/**'],
+          dest: 'build/'
+        },
+        {
+          src: 'bower_components/jquery/dist/jquery.min.js',
+          dest: 'build/js/vendor/jquery.min.js'
+        },
+        {
+          src: 'bower_components/foundation/js/foundation.min.js',
+          dest: 'build/js/vendor/foundation.min.js'
+        },
+        {
+          src: 'bower_components/modernizr/modernizr.js',
+          dest: 'build/js/vendor/modernizr.js'
+        }]
       }
     },
 
