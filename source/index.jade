@@ -4,121 +4,129 @@ html.no-js(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Foundation
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='css/app.css')
-    script(src='../bower_components/modernizr/modernizr.js')
+    script(src='js/vendor/modernizr.js')
   body
-    .row
-      .large-12.columns
-        h1 Welcome to Foundation
-    
-    .row
-      .large-12.columns
-        .panel
-          h3 We&rsquo;re stoked you want to try Foundation!
-          p To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.
-          p Once you've exhausted the fun in this document, you should check out:
-          .row
-            .large-4.medium-4.columns
-              p
-                a(href='http://foundation.zurb.com/docs') Foundation Documentation
-                br
-                | Everything you need to know about using the framework.
-            .large-4.medium-4.columns
-              p
-                a(href='http://github.com/zurb/foundation') Foundation on Github
-                br
-                | Latest code, issue reports, feature requests and more.
-            .large-4.medium-4.columns
-              p
-                a(href='http://twitter.com/foundationzurb') @foundationzurb
-                br
-                | Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).
-    
-    .row
-      .large-8.medium-8.columns
-        h5 Here&rsquo;s your basic grid:
-        <!-- Grid Example -->
+    header
+      .row
+        .medium-7.columns
+          a.logo(href='/') Minitheory
+        .medium-5.columns
+          ul.site-navigation
+            li: a(href='#') Work
+            li: a(href='#') Services
+            li: a(href='#') Process
+            li: a(href='#') About
+            li: a.dark-border.button(href='#') Get in touch
 
-        .row
-          .large-12.columns
-            .callout.panel
-              p <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.
-        .row
-          - for (var x = 0; x < 2; x++)
-            .large-6.medium-6.columns
-              .callout.panel
-                p Six columns
-        .row
-          - for (var x = 0; x < 3; x++)
-            .large-4.medium-4.small-4.columns
-              .callout.panel
-                p Four columns
-              
-        hr
-          
-        h5 We bet you&rsquo;ll need a form somewhere:
-        form
-          .row
-            .large-12.columns
-              label Input Label
-              input(type='text', placeholder='large-12.columns')
-          .row
-            - for (var x = 0; x < 2; x++)
-              .large-4.medium-4.columns
-                label Input Label
-                input(type='text', placeholder='large-4.columns')
-            .large-4.medium-4.columns
-              .row.collapse
-                label Input Label
-                .small-9.columns
-                  input(type='text', placeholder='small-9.columns')
-                .small-3.columns
-                  span.postfix .com
-          .row
-            .large-12.columns
-              label Select Box
-              select
-                option(value='husker') Husker
-                option(value='starbuck') Starbuck
-                option(value='hotdog') Hot Dog
-                option(value='apollo') Apollo
-          .row
-            .large-6.medium-6.columns
-              label Choose Your Favourites
-              input#pokemonRed(type='radio', name='pokemon', value='Red')
-              label(for='pokemonRed') Radio 1
-              input#pokemonBlue(type='radio', name='pokemon', value='Blue')
-              label(for='pokemonBlue') Radio 2
-            .large-6.medium-6.columns
-              label Check these out
-              input#checkbox1(type='checkbox')
-              label(for='checkbox1') Checkbox 1
-              input#checkbox2(type='checkbox')
-              label(for='checkbox2') Checkbox 2
-          .row
-            .large-12.columns
-              label Textarea Label
-              textarea(placeholder='small-12.columns')
-              
-      .large-4.medium-4.columns
-        h5 Try one of these buttons:
-        p
-          a.small.button(href='#') Simple Button
-          br
-          a.small.radius.button(href='#') Radius Button
-          br
-          a.small.round.button(href='#') Round Button
-          br
-          a.medium.success.button(href='#') Success Btn
-          br
-          a.medium.alert.button(href='#') Alert Btn
-          br
-          a.medium.secondary.button(href='#') Secondary Btn
-        .panel
-          h5 So many components, girl!
-          p A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.
-          a.small.button(href='http://foundation.zurb.com/docs/') Go to Foundation Docs
-          
-    script(src='../bower_components/jquery/dist/jquery.min.js')
-    script(src='../bower_components/foundation/js/foundation.min.js')
+    .row.collapse.hero--row
+      .medium-12.columns
+        section.hero
+          .hero--text-container
+            h2.hero--text We make software simple.
+
+    section.services.page-section
+      .row
+        .medium-12.columns
+          h2 Our services
+          p We cover anything needed for your comprehensive brand experience.
+      .row
+        .medium-4.columns
+          h3 Service 1
+          p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
+        .medium-4.columns
+          h3 Service 2
+          p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
+        .medium-4.columns
+          h3 Service 3
+          p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
+      .row
+        .medium-12.columns
+          a.button(href='#') Find out more
+
+    section.clients.page-section.theme-blue-gradient
+      .row
+        .medium-6.medium-centered.columns
+          h2 Clients we've worked with
+          p
+            | Beauty, insurance, travel, ecommerce, startups &ndash; and every
+            | business in between &ndash; trust in Minitheory to craft meaningful
+            | digital experiences.
+          p Are you next?
+
+      .row
+        .medium-12.columns
+          ul.clients-list
+            li: i.client-logos-sprite.client-logos-bellabox(title='Bellabox') Bellabox
+            li: i.client-logos-sprite.client-logos-creative(title='Creative Technology') Creative Technology
+            li: i.client-logos-sprite.client-logos-evernote(title='Evernote') Evernote
+            li: i.client-logos-sprite.client-logos-aon(title='Aon Benfield') Aon Benfield
+            li: i.client-logos-sprite.client-logos-neo(title='Neo Innovation') Neo Innovation
+            li: i.client-logos-sprite.client-logos-travelmob(title='travelmob') travelmob
+            li: i.client-logos-sprite.client-logos-shopabout(title='ShopAbout') ShopAbout
+            li: i.client-logos-sprite.client-logos-indinero(title='inDinero') inDinero
+            li: i.client-logos-sprite.client-logos-skinnymint(title='SkinnyMint') SkinnyMint
+            li: i.client-logos-sprite.client-logos-mesitis(title='Mesitis Capital') Mesitis Capital
+            li: i.client-logos-sprite.client-logos-e27(title='e27') e27
+            li: i.client-logos-sprite.client-logos-daylight(title='Daylight Studios') Daylight Studios
+            li: i.client-logos-sprite.client-logos-ideo(title='IDEO') IDEO
+            li: i.client-logos-sprite.client-logos-packnada(title='Packanada') Packanada
+            li: i.client-logos-sprite.client-logos-mti(title='Ministry of Trade and Industry, Singapore') Ministry of Trade and Industry, Singapore
+
+    section.testimonials.page-section
+      .row
+        .medium-4.columns
+          blockquote
+            | “The Minitheory team has been instrumental in helping us launch
+            | One Cent Movement. They bring together a rare combination of
+            | client understanding and design sensitivity which makes working
+            | with them a great experience.”
+            cite
+              | Sung, Movement Director<span class="hide">, </span>
+              span.break one cent movement
+        .medium-4.columns
+          blockquote
+            | "The guys at Minitheory are bunch hardworking and talented
+            | individuals who really understand the mechanics behind good
+            | design. During the course of our work, they have spent time really
+            | understand our problems and providing designs that not only look
+            | great, but solve the real pain point faced by our users."
+            cite
+              | Mohan, Founder<span class="hide">, </span>
+              span.break e27
+        .medium-4.columns
+          blockquote
+            | "Very impressed by the initiative and thought leadership that
+            | Minitheory is bringing to the table in Singapore when it comes to
+            | UX. Their design methodology is clear and effective – and I’m
+            | really pleased with the results!"
+            cite
+              | Joyce Huang<span class="hide">, </span>
+              span.break Microsoft Singapore
+
+    section.contact.page-section.theme-dark-bg
+      .row
+        .medium-12.columns
+          h2 Let's make things simple.
+          a.button(href='#') Work with us
+
+    footer#footer
+      .row
+        .medium-3.columns
+          i.logo
+          | &copy; 2012 &ndash; 2015 Minitheory Pte Ltd
+        .align-center.footer-middle.medium-6.columns
+          | 4B Jiak Chuan Road, Singapore 089261 / Contact Us
+        .align-right.medium-3.columns
+          ul.social-icons
+            li
+              a(href='//dribbble.com/minitheory'): i.fa.fa-dribbble
+            li
+              a(href='//facebook.com/minitheory'): i.fa.fa-facebook
+            li
+              a(href='//www.linkedin.com/company/minitheory-design'): i.fa.fa-linkedin
+
+    script(src='js/vendor/jquery.min.js')
+    script(src='js/vendor/foundation.min.js')
     script(src='js/app.js')

@@ -1,0 +1,32 @@
+header
+  background-color: rgba(255, 255, 255, 0.92)
+  padding: rem-calc(20 0)
+  width: 100%
+  z-index: 999
+
+  .logo
+    +retina-background(logo_landscape, png, 50px, 179px)
+    display: block
+    height: 50px
+    text-indent: rem-calc(-9999)
+    width: 179px
+
+ul.site-navigation
+  font-size: rem-calc(14)
+  list-style: none
+  margin: rem-calc(15) 0
+  li
+    display: inline
+    margin-right: rem-calc(30)
+    text-transform: uppercase
+    a
+      +transition(all 0.25s)
+      color: $text-dark
+      &:hover
+        +transition(all 0.25s)
+        border-bottom: solid 2px $accent
+        color: $accent
+        padding-bottom: rem-calc(6)
+      &.button:hover
+        color: $white
+        padding-bottom: rem-calc(14)

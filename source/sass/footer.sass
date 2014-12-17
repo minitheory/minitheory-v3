@@ -1,0 +1,31 @@
+#footer
+  background-color: $footer-bg
+  color: $text-dark
+  font-size: rem-calc(14)
+  padding: rem-calc(50 0)
+  .logo
+    +retina-background(logo_landscape, png, 50px, 50px)
+    background-size: initial
+    display: inline-block
+    height: 50px
+    text-indent: rem-calc(-9999)
+    width: 50px
+  .social-icons
+    font-size: rem-calc(20)
+    > li
+      display: inline
+      margin-right: rem-calc(30)
+      a
+        color: $text-dark
+      a:hover
+        color: $accent
+    > li:last-child
+      margin-right: 0
+
+.footer-container
+  display: table
+  width: 100%
+
+.footer-column
+  display: table-cell
+  vertical-align: middle

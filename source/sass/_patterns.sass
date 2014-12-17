@@ -1,0 +1,36 @@
+.align-left
+  text-align: left
+.align-center
+  text-align: center
+.align-right
+  text-align: right
+
+span.break:before
+  content: '\A'
+  white-space: pre
+
+a.button
+  +transition(all 0.25s)
+  border: solid 1px $accent
+  border-radius: $global-radius
+  font-size: rem-calc(14)
+  padding: rem-calc(14 20)
+  text-transform: uppercase
+  &.dark-border
+    border-color: $text-dark
+  &:hover
+    +transition(all 0.25s)
+    border-color: $accent
+    background-color: $accent
+    color: $white
+
+.theme-blue-gradient
+  +background-image(linear-gradient(to right, #83A4D4, #A0D7DA))
+  color: $white
+  h1, h2, h3, h4, h5
+    color: $white
+
+.theme-dark-bg
+  background-color: $dark-bg
+  h1, h2, h3, h4, h5
+    color: $white

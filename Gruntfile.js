@@ -4,10 +4,24 @@ module.exports = function(grunt) {
 
     copy: {
       build: {
-        expand: true,
-        cwd: 'source/',
-        src: ['js/**'],
-        dest: 'build/'
+        files: [{
+          expand: true,
+          cwd: 'source/',
+          src: ['img/**', 'js/**'],
+          dest: 'build/'
+        },
+        {
+          src: 'bower_components/jquery/dist/jquery.min.js',
+          dest: 'build/js/vendor/jquery.min.js'
+        },
+        {
+          src: 'bower_components/foundation/js/foundation.min.js',
+          dest: 'build/js/vendor/foundation.min.js'
+        },
+        {
+          src: 'bower_components/modernizr/modernizr.js',
+          dest: 'build/js/vendor/modernizr.js'
+        }]
       }
     },
 
@@ -28,6 +42,7 @@ module.exports = function(grunt) {
         },
         options: {
           bundleExec: true,
+          compass: true,
           loadPath: ['bower_components/foundation/scss'],
           style: 'compressed'
         }
@@ -48,7 +63,7 @@ module.exports = function(grunt) {
       },
 
       others: {
-        files: ['**/*.js'],
+        files: ['img/**.*', '**/*.js'],
         tasks: ['newer:copy']
       }
     }

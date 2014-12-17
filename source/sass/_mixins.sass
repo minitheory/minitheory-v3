@@ -1,0 +1,7 @@
+=retina-background($image, $extension, $height, $width)
+  background-size: $width $height
+  background-image: url('../img/#{$image}.#{$extension}')
+  @media #{$retina2x}
+    background-image: url('../img/#{$image}@2x.#{$extension}')
+  @media #{$retina3x}
+    background-image: url('../img/#{$image}@3x.#{$extension}')
