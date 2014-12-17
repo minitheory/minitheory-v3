@@ -1,5 +1,6 @@
 .work-panel
-  background-color: #F00
+  background-color: $light-bg
+  display: table
   height: rem-calc(285)
   margin-bottom: rem-calc(10)
   width: rem-calc(285)
@@ -7,3 +8,31 @@
     height: rem-calc(580)
   &.double-width
     width: rem-calc(580)
+  > a
+    display: table-cell
+    height: 100%
+    text-align: center
+    vertical-align: middle
+    width: 100%
+
+.work-panel
+  &.bellabox
+    background-image: url(../img/work-panel-bellabox.jpg)
+  &.creative
+    background-image: url(../img/work-panel-creative.jpg)
+  &.daylight-studios
+    background-image: url(../img/work-panel-daylight-studios.jpg)
+  &.glee-studio
+    background-image: url(../img/work-panel-glee-studio.jpg)
+  &.iji
+    background-image: url(../img/work-panel-iji.jpg)
+  &.indinero
+    background-image: url(../img/work-panel-indinero.jpg)
+  &.ninja-accountant
+    background-image: url(../img/work-panel-ninja-accountant.jpg)
+  &.travelmob
+    background-image: url(../img/work-panel-travelmob.jpg)
+  &.true-fitness
+    background-image: url(../img/work-panel-true-fitness.jpg)
+  &.twin-galaxy
+    background-image: url(../img/work-panel-twin-galaxy.jpg)
