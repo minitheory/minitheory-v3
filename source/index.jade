@@ -1,107 +1,93 @@
-doctype html
-html.no-js(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Foundation
-    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
-    link(rel='stylesheet', href='css/app.css')
-    script(src='js/vendor/modernizr.js')
-  body
-    include ./includes/header.jade
-    .row.collapse.hero--row
+extends ./layouts/layout.jade
+
+block page-content
+  .row.collapse.hero--row
+    .medium-12.columns
+      section.hero
+        .hero--text-container
+          h2.hero--text We make software simple.
+
+  section.services.page-section
+    .row
       .medium-12.columns
-        section.hero
-          .hero--text-container
-            h2.hero--text We make software simple.
+        h2 Our services
+        p We cover anything needed for your comprehensive brand experience.
+    .row
+      .medium-4.columns
+        h3 Service 1
+        p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
+      .medium-4.columns
+        h3 Service 2
+        p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
+      .medium-4.columns
+        h3 Service 3
+        p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
+    .row
+      .medium-12.columns
+        a.button(href='#') Find out more
 
-    section.services.page-section
-      .row
-        .medium-12.columns
-          h2 Our services
-          p We cover anything needed for your comprehensive brand experience.
-      .row
-        .medium-4.columns
-          h3 Service 1
-          p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
-        .medium-4.columns
-          h3 Service 2
-          p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
-        .medium-4.columns
-          h3 Service 3
-          p Lorem ipsum dolor sit amet, vis iudico legere cu. Ad mollis offendit consectetuer sit. No cetero accusam facilisis eos, commodo torquatos et cum, dicam accusam ut vim.
-      .row
-        .medium-12.columns
-          a.button(href='#') Find out more
+  section.clients.page-section.theme-blue-gradient
+    .row
+      .medium-6.medium-centered.columns
+        h2 Clients we've worked with
+        p
+          | Beauty, insurance, travel, ecommerce, startups &ndash; and every
+          | business in between &ndash; trust in Minitheory to craft meaningful
+          | digital experiences.
+        p Are you next?
 
-    section.clients.page-section.theme-blue-gradient
-      .row
-        .medium-6.medium-centered.columns
-          h2 Clients we've worked with
-          p
-            | Beauty, insurance, travel, ecommerce, startups &ndash; and every
-            | business in between &ndash; trust in Minitheory to craft meaningful
-            | digital experiences.
-          p Are you next?
+    .row
+      .medium-12.columns
+        ul.clients-list
+          li: i.client-logos-sprite.client-logos-bellabox(title='Bellabox') Bellabox
+          li: i.client-logos-sprite.client-logos-creative(title='Creative Technology') Creative Technology
+          li: i.client-logos-sprite.client-logos-evernote(title='Evernote') Evernote
+          li: i.client-logos-sprite.client-logos-aon(title='Aon Benfield') Aon Benfield
+          li: i.client-logos-sprite.client-logos-neo(title='Neo Innovation') Neo Innovation
+          li: i.client-logos-sprite.client-logos-travelmob(title='travelmob') travelmob
+          li: i.client-logos-sprite.client-logos-shopabout(title='ShopAbout') ShopAbout
+          li: i.client-logos-sprite.client-logos-indinero(title='inDinero') inDinero
+          li: i.client-logos-sprite.client-logos-skinnymint(title='SkinnyMint') SkinnyMint
+          li: i.client-logos-sprite.client-logos-mesitis(title='Mesitis Capital') Mesitis Capital
+          li: i.client-logos-sprite.client-logos-e27(title='e27') e27
+          li: i.client-logos-sprite.client-logos-daylight(title='Daylight Studios') Daylight Studios
+          li: i.client-logos-sprite.client-logos-ideo(title='IDEO') IDEO
+          li: i.client-logos-sprite.client-logos-packnada(title='Packanada') Packanada
+          li: i.client-logos-sprite.client-logos-mti(title='Ministry of Trade and Industry, Singapore') Ministry of Trade and Industry, Singapore
 
-      .row
-        .medium-12.columns
-          ul.clients-list
-            li: i.client-logos-sprite.client-logos-bellabox(title='Bellabox') Bellabox
-            li: i.client-logos-sprite.client-logos-creative(title='Creative Technology') Creative Technology
-            li: i.client-logos-sprite.client-logos-evernote(title='Evernote') Evernote
-            li: i.client-logos-sprite.client-logos-aon(title='Aon Benfield') Aon Benfield
-            li: i.client-logos-sprite.client-logos-neo(title='Neo Innovation') Neo Innovation
-            li: i.client-logos-sprite.client-logos-travelmob(title='travelmob') travelmob
-            li: i.client-logos-sprite.client-logos-shopabout(title='ShopAbout') ShopAbout
-            li: i.client-logos-sprite.client-logos-indinero(title='inDinero') inDinero
-            li: i.client-logos-sprite.client-logos-skinnymint(title='SkinnyMint') SkinnyMint
-            li: i.client-logos-sprite.client-logos-mesitis(title='Mesitis Capital') Mesitis Capital
-            li: i.client-logos-sprite.client-logos-e27(title='e27') e27
-            li: i.client-logos-sprite.client-logos-daylight(title='Daylight Studios') Daylight Studios
-            li: i.client-logos-sprite.client-logos-ideo(title='IDEO') IDEO
-            li: i.client-logos-sprite.client-logos-packnada(title='Packanada') Packanada
-            li: i.client-logos-sprite.client-logos-mti(title='Ministry of Trade and Industry, Singapore') Ministry of Trade and Industry, Singapore
+  section.testimonials.page-section
+    .row
+      .medium-4.columns
+        blockquote
+          | “The Minitheory team has been instrumental in helping us launch
+          | One Cent Movement. They bring together a rare combination of
+          | client understanding and design sensitivity which makes working
+          | with them a great experience.”
+          cite
+            | Sung, Movement Director<span class="hide">, </span>
+            span.break one cent movement
+      .medium-4.columns
+        blockquote
+          | "The guys at Minitheory are bunch hardworking and talented
+          | individuals who really understand the mechanics behind good
+          | design. During the course of our work, they have spent time really
+          | understand our problems and providing designs that not only look
+          | great, but solve the real pain point faced by our users."
+          cite
+            | Mohan, Founder<span class="hide">, </span>
+            span.break e27
+      .medium-4.columns
+        blockquote
+          | "Very impressed by the initiative and thought leadership that
+          | Minitheory is bringing to the table in Singapore when it comes to
+          | UX. Their design methodology is clear and effective – and I’m
+          | really pleased with the results!"
+          cite
+            | Joyce Huang<span class="hide">, </span>
+            span.break Microsoft Singapore
 
-    section.testimonials.page-section
-      .row
-        .medium-4.columns
-          blockquote
-            | “The Minitheory team has been instrumental in helping us launch
-            | One Cent Movement. They bring together a rare combination of
-            | client understanding and design sensitivity which makes working
-            | with them a great experience.”
-            cite
-              | Sung, Movement Director<span class="hide">, </span>
-              span.break one cent movement
-        .medium-4.columns
-          blockquote
-            | "The guys at Minitheory are bunch hardworking and talented
-            | individuals who really understand the mechanics behind good
-            | design. During the course of our work, they have spent time really
-            | understand our problems and providing designs that not only look
-            | great, but solve the real pain point faced by our users."
-            cite
-              | Mohan, Founder<span class="hide">, </span>
-              span.break e27
-        .medium-4.columns
-          blockquote
-            | "Very impressed by the initiative and thought leadership that
-            | Minitheory is bringing to the table in Singapore when it comes to
-            | UX. Their design methodology is clear and effective – and I’m
-            | really pleased with the results!"
-            cite
-              | Joyce Huang<span class="hide">, </span>
-              span.break Microsoft Singapore
-
-    section.contact.page-section.theme-dark-bg
-      .row
-        .medium-12.columns
-          h2 Let's make things simple.
-          a.button(href='#') Work with us
-
-    include ./includes/footer.jade
-
-    script(src='js/vendor/jquery.min.js')
-    script(src='js/vendor/foundation.min.js')
-    script(src='js/app.js')
+  section.contact.page-section.theme-dark-bg
+    .row
+      .medium-12.columns
+        h2 Let's make things simple.
+        a.button(href='#') Work with us
