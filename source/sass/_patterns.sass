@@ -26,12 +26,17 @@ a.button
 
 .page-section
   padding: rem-calc(90 0)
+  &.half-padding
+    padding: rem-calc(45 0)
 
 .theme-blue-gradient
   +background-image(linear-gradient(to right, #83A4D4, #A0D7DA))
   color: $white
   h1, h2, h3, h4, h5
     color: $white
+
+.theme-light-bg
+  background-color: $light-bg
 
 .theme-dark-bg
   background-color: $dark-bg
