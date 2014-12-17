@@ -21,6 +21,10 @@ module.exports = function(grunt) {
         {
           src: 'bower_components/modernizr/modernizr.js',
           dest: 'build/js/vendor/modernizr.js'
+        },
+        {
+          src: 'bower_components/masonry/dist/masonry.pkgd.min.js',
+          dest: 'build/js/vendor/masonry.min.js'
         }]
       }
     },
