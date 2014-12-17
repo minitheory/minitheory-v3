@@ -11,4 +11,10 @@ $(document).ready(function() {
       $('header').css('position', 'static');
     }
   });
+
+  $('.work-panels').masonry({
+    columnWidth: 285,
+    gutter: 10,
+    itemSelector: '.work-panel'
+  })
 });
