@@ -8,18 +8,7 @@ html.no-js(lang='en')
     link(rel='stylesheet', href='css/app.css')
     script(src='js/vendor/modernizr.js')
   body
-    header
-      .row
-        .medium-7.columns
-          a.logo(href='/') Minitheory
-        .medium-5.columns
-          ul.site-navigation
-            li: a(href='#') Work
-            li: a(href='#') Services
-            li: a(href='#') Process
-            li: a(href='#') About
-            li: a.dark-border.button(href='#') Get in touch
-
+    include ./includes/header.jade
     .row.collapse.hero--row
       .medium-12.columns
         section.hero
@@ -111,21 +100,7 @@ html.no-js(lang='en')
           h2 Let's make things simple.
           a.button(href='#') Work with us
 
-    footer#footer
-      .row
-        .medium-3.columns
-          i.logo
-          | &copy; 2012 &ndash; 2015 Minitheory Pte Ltd
-        .align-center.footer-middle.medium-6.columns
-          | 4B Jiak Chuan Road, Singapore 089261 / Contact Us
-        .align-right.medium-3.columns
-          ul.social-icons
-            li
-              a(href='//dribbble.com/minitheory'): i.fa.fa-dribbble
-            li
-              a(href='//facebook.com/minitheory'): i.fa.fa-facebook
-            li
-              a(href='//www.linkedin.com/company/minitheory-design'): i.fa.fa-linkedin
+    include ./includes/footer.jade
 
     script(src='js/vendor/jquery.min.js')
     script(src='js/vendor/foundation.min.js')
