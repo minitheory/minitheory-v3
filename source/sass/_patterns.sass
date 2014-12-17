@@ -1,0 +1,18 @@
+span.break:before
+  content: '\A'
+  white-space: pre
+
+a.button
+  +transition(all 0.25s)
+  border: solid 1px $accent
+  border-radius: $global-radius
+  font-size: rem-calc(14px)
+  padding: rem-calc(14px) rem-calc(20px)
+  text-transform: uppercase
+  &.dark-border
+    border-color: $text-dark
+  &:hover
+    +transition(all 0.25s)
+    border-color: $accent
+    background-color: $accent
+    color: $white
