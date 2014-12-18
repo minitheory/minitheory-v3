@@ -4,12 +4,14 @@ block active-nav
   - var activeNav = 'work';
 
 block page-content
-  .page-section
+  .case-study-banner.travelmob.page-section
     .row
       .medium-12.columns
-        h2 Case Study
-        h1.case-study-headline A traveller's journey from beta to launch
-        a(href='travelmob.com') travelmob.com
+        h2.case-study-subheadline Case Study &ndash; travelmob
+        h1.case-study-headline
+          | A traveller's journey
+          span.break from beta to launch
+        a.case-study-site-url(href='travelmob.com') travelmob.com
 
   .case-study-content.page-section
     .row
@@ -49,7 +51,16 @@ block page-content
           | and the amount of work that needs to be done to their existing
           | site, while improving overall usability.
     .row
-      .medium-12.medium-centered.columns
+      .image-container.before-header.medium-12.medium-centered.columns
+        figure
+          img(src='/img/case-study-travelmob-old-vs-new.jpg')
+          .row
+            .medium-8.medium-centered.columns
+              figcaption
+                | The new website was designed to encourage visitors to browse and
+                | discover accommodations
+                span.break
+                | beyond that which they were searching for.
     .row
       .medium-8.medium-centered.columns
         h3 Tackling the Key User Flows
@@ -84,7 +95,16 @@ block page-content
           | discover the kind of experiences an accommodation offers.
 
     .row
-      .medium-12.medium-centered.columns
+      .image-container.before-header.medium-12.medium-centered.columns
+        figure
+          img(src='/img/case-study-travelmob-screens.jpg')
+          .row
+            .medium-8.medium-centered.columns
+              figcaption
+                | A new search experience was introduced, allowing users to
+                | focus on the listings
+                span.break
+                | and quickly find what they were looking for.
     .row
       .medium-8.medium-centered.columns
         h3 An Easier Listing Experience
