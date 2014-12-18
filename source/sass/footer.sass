@@ -4,16 +4,20 @@
   font-size: rem-calc(14)
   padding: rem-calc(50 0)
   .logo
-    +retina-background(logo_landscape, png, 50px, 50px)
-    background-size: initial
+    +retina-background(logo, png, 50px, 46px)
+    background-repeat: no-repeat
     display: inline-block
-    height: 50px
+    height: 54px
+    margin-right: rem-calc(10)
     text-indent: rem-calc(-9999)
-    width: 50px
+    vertical-align: middle
+    width: 46px
   .social-icons
     font-size: rem-calc(20)
+    margin: 0
     > li
       display: inline
+      line-height: rem-calc(54)
       margin-right: rem-calc(30)
       a
         color: $text-dark
@@ -21,6 +25,9 @@
         color: $accent
     > li:last-child
       margin-right: 0
+
+.footer-middle
+  line-height: rem-calc(54)
 
 .footer-cta
   text-align: center
