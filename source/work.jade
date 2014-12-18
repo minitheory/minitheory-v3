@@ -1,0 +1,40 @@
+extends ./layouts/layout.jade
+
+block active-nav
+  - var activeNav = 'work';
+
+block page-content
+  .theme-blue-gradient
+    .row
+      .page-section.half-padding.align-center.medium-12.columns
+        h1 Our Work
+
+  .row
+    .medium-12.columns
+      .work-panels.page-section
+        .bellabox.work-panel.double-height.double-width
+          a(href='#'): i.client-logos-sprite.client-logos-bellabox(title='Bellabox')
+        .ninja-accountant.work-panel
+          a(href='#') ninja accountant
+        .iji.work-panel
+          a(href='#') iji
+        .indinero.work-panel.double-height.double-width
+          a(href='#') indinero
+        .daylight-studios.work-panel
+          a(href='#') daylight studios
+        .glee-studio.work-panel.double-height
+          a(href='#') glee studio
+        .work-panel
+          a(href='#') ?
+        .travelmob.work-panel.double-height.double-width
+          a(href='/work/travelmob.html') travelmob
+        .creative.work-panel.double-height.double-width
+          a(href='/work/creative.html') creative
+        .work-panel.double-height
+          a(href='#') ?
+        .twin-galaxy.work-panel.double-height
+          a(href='#') twin galaxy
+        .true-fitness.work-panel
+          a(href='#') true fitness
+        .work-panel
+          a(href='#') ?

@@ -21,6 +21,10 @@ module.exports = function(grunt) {
         {
           src: 'bower_components/modernizr/modernizr.js',
           dest: 'build/js/vendor/modernizr.js'
+        },
+        {
+          src: 'bower_components/masonry/dist/masonry.pkgd.min.js',
+          dest: 'build/js/vendor/masonry.min.js'
         }]
       }
     },
@@ -29,7 +33,7 @@ module.exports = function(grunt) {
       build: {
         expand: true,
         cwd: 'source/',
-        src: ['*.jade'],
+        src: ['*.jade', 'work/*.jade'],
         dest: 'build/',
         ext: '.html'
       }
@@ -53,7 +57,7 @@ module.exports = function(grunt) {
       grunt: { files: ['Gruntfile.js'] },
 
       jade: {
-        files: 'source/**/*.jade',
+        files: ['source/**/*.jade'],
         tasks: ['jade']
       },
 
