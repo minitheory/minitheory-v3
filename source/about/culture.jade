@@ -1,0 +1,75 @@
+extends ../layouts/layout.jade
+
+block active-nav
+  - var activeNav = 'about';
+
+block about-active-nav
+  - var aboutActiveNav = 'culture';
+
+block page-content
+  include ../includes/about-header.jade
+
+  .culture.page-section.half-padding
+    .row
+      .align-center.medium-12.columns
+        h1 Culture Comes First
+    .row
+      .medium-6.columns
+        p
+          | We’re a team of problem solvers who believe that design can play a
+          | strategic role in creating products. Design isn’t just the job of
+          | designers. We believe that developing great products is a
+          | multi-disciplinary, collaborative process. Craftsmanship is important
+          | to us because we care about our users and clients. Their joy gives our
+          | work meaning.
+      .medium-6.columns
+        p
+          | Work should be meaningful enough to be fulfilling, and challenging
+          | enough for personal growth. Throw in a healthy sense of humour and
+          | you've got the perfect environment for doing your life's work.
+    .row
+      .culture-photos.medium-12.columns
+        ul.small-block-grid-2.medium-block-grid-4
+          - for (var i = 0; i < 8; i++)
+            li: img(src='/img/about-culture-#{i+1}.jpg')
+
+  .culture.page-section.half-padding
+    .row
+      .medium-6.columns
+        h2 There's always more to learn
+        p
+          | Learning and self-improvement are a huge part of our culture. We want
+          | our team to challenge themselves, learn new skills, try out new things
+          | and grow together. Sharing sessions, learning trips are just some
+          | methods we adopt. You'll also see us a lot at workshops, meetups and
+          | conferences.
+
+        h2 We're platform agnostic
+        p
+          | We don't define ourselves by the tools or processes we use. We choose
+          | the most suitable one for the job. Besides, technology constantly
+          | changes. Software currently takes the form of web based applications,
+          | mobile apps and native desktop applications. Who knows what's next?
+
+        h2 We're in perpetual beta
+        p
+          | The tech industry moves at breakneck speed. While that excites us, it
+          | also means what worked a few months ago might change overnight. To
+          | keep up, we constantly experiment with new ways to do things better.
+          | Here’s a few things we’ve been experimenting with lately:
+        ul
+          li Lean UX
+          li UX within Agile teams
+          li Frontend style guides
+          li Component libraries
+          li Atomic design
+          li HTML wireframes
+          li Element collages
+          li Visual inventories
+      .medium-6.columns
+        img(src='/img/about-culture-minitheory.jpg')
+
+  .row
+    .medium-6.columns
+
+    .medium-6.columns
