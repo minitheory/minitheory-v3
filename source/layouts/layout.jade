@@ -4,21 +4,40 @@ block active-nav
 block about-active-nav
   - var aboutActiveNav = 'company';
 
+block page-title
+  - var pageTitle = null;
+
+block meta-tags
+  - var metaDescription = null;
+
 doctype html
 html.no-js(lang='en')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Foundation
+    - if (metaDescription != null)
+      meta(name='description', content='#{metaDescription}')
+    meta(name='keywords', content='User Experience Design, Mobile Interface Design, User Interface Design, UX, UI, Singapore')
+    title
+      | Minitheory
+      - if (pageTitle != null)
+        = " | "
+        | #{pageTitle}
+      - else
+        = ' | User experience design'
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='/css/app.css')
     script(src='/js/vendor/modernizr.js')
+    script(src='//use.typekit.net/tdf7xsc.js')
+    <script>try{Typekit.load();}catch(e){}</script>
   body
     include ../includes/header.jade
 
     block page-content
 
     include ../includes/footer.jade
+
+    include ../includes/analytics.jade
 
     script(src='/js/vendor/jquery.min.js')
     script(src='/js/vendor/foundation.min.js')
