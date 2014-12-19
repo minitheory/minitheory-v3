@@ -2,6 +2,10 @@ $client-logos-sprite-dimensions: true
 @import client-logos/*.png
 @include all-client-logos-sprites
 
-.client-logos-sprite
+$client-logos-large-sprite-dimensions: true
+@import client-logos-large/*.png
+@include all-client-logos-large-sprites
+
+.client-logos-sprite, .client-logos-large-sprite
   display: inline-block
   text-indent: rem-calc(-9999)
