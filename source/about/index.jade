@@ -1,0 +1,49 @@
+extends ../layouts/layout.jade
+
+block active-nav
+  - var activeNav = 'about';
+
+block page-content
+  include ../includes/about-header.jade
+
+  .row
+    .medium-6.columns
+      h1 What We Do
+      p
+        | Minitheory is a digital design studio, founded in 2012. We deliver
+        | quality user experience, interaction and visual design for web, mobile
+        | devices and software applications.
+    .medium-6.columns
+      h2 We have experience in
+      ul
+        li designing user-friendly web and software interfaces
+        li prototyping new product features
+        li creating new products
+
+      strong We want to make software simple and useful.
+
+      p
+        | We love computers, but it’s unfortunate that some software make us
+        | feel like idiots. We want to change that. We expect software to be
+        | intuitively designed  – and ultimately, useful.
+
+      blockquote
+        | The computer is the equivalent of a bicycle for our minds.
+        cite Steve Jobs
+
+      h2 Guiding principles
+      ol
+        li Technology should make life simpler
+        li Design based on how people think, work and behave
+        li Design to solve problems, not to paint pretty pictures
+        li Experiment, fail fast and iterate
+
+  .row
+    .medium-12.columns
+      h2 Meet the Minions Behind Minitheory
+  .row
+    .medium-3.columns
+    .medium-3.columns
+    .medium-3.columns
+    .medium-3.columns
+    .medium-3.columns
