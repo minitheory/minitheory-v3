@@ -3,6 +3,9 @@
   color: $text-dark
   font-size: rem-calc(14)
   padding: rem-calc(50 0)
+  @media #{$small-only}
+    .columns
+      text-align: center
   .logo
     +retina-background(logo, png, 50px, 46px)
     background-repeat: no-repeat
@@ -12,6 +15,10 @@
     text-indent: rem-calc(-9999)
     vertical-align: middle
     width: 46px
+    @media #{$small-only}
+      display: block
+      margin-left: auto
+      margin-right: auto
   .social-icons
     font-size: rem-calc(20)
     margin: 0
@@ -28,6 +35,9 @@
 
 .footer-middle
   line-height: rem-calc(54)
+  @media #{$small-only}
+    line-height: inherit
+    margin: rem-calc(20) 0
 
 .footer-cta
   text-align: center
