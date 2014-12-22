@@ -13,9 +13,13 @@
       padding: rem-calc(13)
     > .columns:first-child
       border-right: solid 1px $border-color
+      @media #{$small-only}
+        border-right: none
   .service-panel-header
     border-bottom: solid 1px $border-color
     margin: 0
     padding-bottom: rem-calc(15)
+    @media #{$small-only}
+      border-bottom: none
   h4
     font-size: rem-calc(20)

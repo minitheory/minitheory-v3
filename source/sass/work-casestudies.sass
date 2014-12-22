@@ -21,6 +21,9 @@
     text-transform: uppercase
   &.travelmob
     background-image: url(../img/case-study-travelmob-banner.jpg)
+    .case-study-headline
+      @media #{$medium-up}
+        width: rem-calc(500)
 
 .case-study-content
   padding-top: rem-calc(32)
@@ -57,6 +60,8 @@
 
 .case-study-details
   margin-top: rem-calc(6)
+  @media #{$small-only}
+    text-align: center
   .header
     font-size: rem-calc(18)
     font-weight: bold

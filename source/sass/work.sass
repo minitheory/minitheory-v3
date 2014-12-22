@@ -1,13 +1,18 @@
 .work-panel
   background-color: $light-bg
+  background-position: center center
   display: table
   height: rem-calc(285)
   margin-bottom: rem-calc(10)
   width: rem-calc(285)
   &.double-height
     height: rem-calc(580)
+    @media #{$small-only}
+      height: rem-calc(285)
   &.double-width
     width: rem-calc(580)
+    @media #{$small-only}
+      width: rem-calc(285)
   > a
     display: table-cell
     height: 100%

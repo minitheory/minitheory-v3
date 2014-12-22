@@ -6,7 +6,7 @@
   width: 100%
 
 .hero--row
-  max-width: 100%
+  max-width: rem-calc(1600)
 
 .hero--text-container
   display: table-cell
@@ -32,6 +32,10 @@
       padding-top: rem-calc(50)
       text-align: center
       width: 20%
+      @media #{$medium-only}
+        width: 25%
+      @media #{$small-only}
+        width: 50%
 
 .testimonials
   img
@@ -39,8 +43,19 @@
     height: 70px
     border-radius: rem-calc(35)
   blockquote
-    font-style: italic
+    @media #{$small-only}
+      text-align: center
+      margin-bottom: rem-calc(50)
   cite
-    margin-left: 15px
     font-style: normal
     font-weight: $font-weight-lighter
+    margin-top: rem-calc(20)
+    @media #{$medium-down}
+      text-align: center
+    img
+      margin-right: rem-calc(15)
+      @media #{$medium-down}
+        display: block
+        margin: 0 auto
+    &:before
+      content: none
