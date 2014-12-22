@@ -11,6 +11,14 @@ header
     text-indent: rem-calc(-9999)
     width: 179px
 
+  .menu-button
+    float: right
+    line-height: 50px
+    a
+      color: black
+    a.active
+      color: $accent
+
 ul.site-navigation
   font-size: rem-calc(14)
   list-style: none
@@ -32,3 +40,17 @@ ul.site-navigation
         padding-bottom: rem-calc(14)
   li:last-child
     margin-right: 0
+  @media #{$small-only}
+    display: none
+    font-size: rem-calc(18)
+    text-align: right
+    li
+      display: block
+      margin-right: rem-calc(10)
+      a.active, a:hover
+        border-bottom: 0
+      a.button
+        font-size: rem-calc(18)
+        padding: rem-calc(10)
+    li:last-child
+      margin-top: rem-calc(10)
