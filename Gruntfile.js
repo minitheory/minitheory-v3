@@ -9,23 +9,23 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'source/',
             src: 'js/**',
-            dest: 'web/'
+            dest: 'assets/'
           },
           {
             src: 'bower_components/jquery/dist/jquery.min.js',
-            dest: 'web/js/vendor/jquery.min.js'
+            dest: 'assets/js/vendor/jquery.min.js'
           },
           {
             src: 'bower_components/foundation/js/foundation.min.js',
-            dest: 'web/js/vendor/foundation.min.js'
+            dest: 'assets/js/vendor/foundation.min.js'
           },
           {
             src: 'bower_components/modernizr/modernizr.js',
-            dest: 'web/js/vendor/modernizr.js'
+            dest: 'assets/js/vendor/modernizr.js'
           },
           {
             src: 'bower_components/masonry/dist/masonry.pkgd.min.js',
-            dest: 'web/js/vendor/masonry.min.js'
+            dest: 'assets/js/vendor/masonry.min.js'
           }]
       }
     },
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     sass: {
       build: {
         files: {
-          'web/css/app.css': 'source/sass/app.sass'
+          'assets/css/app.css': 'source/sass/app.sass'
         },
         options: {
           bundleExec: true,
