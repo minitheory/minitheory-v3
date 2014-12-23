@@ -37,6 +37,12 @@ $app->get('/work', function() use ($app) {
 })
 ->bind('work');
 
+$app->get('/work/indinero', function() use ($app) {
+    return $app['twig']->render('work/indinero.html.haml');
+})
+->bind('work_indinero');
+
+
 $app->get('/work/travelmob', function() use ($app) {
     return $app['twig']->render('work/travelmob.html.haml');
 })
