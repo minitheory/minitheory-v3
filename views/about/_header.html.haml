@@ -9,6 +9,6 @@
   .medium-12.columns
     %ul
       %li
-        %a(href="/about/index.html" class=(active_about_nav == "company" ? "active" : "")) Company
+        %a(href="#{path('about_company')}" class=(active_about_nav == "company" ? "active" : "")) Company
       %li
         %a(href="#{path('about_culture')}" class=(active_about_nav == "culture" ? "active" : "")) Culture

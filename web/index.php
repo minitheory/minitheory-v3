@@ -27,6 +27,16 @@ $app->get('/', function () use ($app) {
 })
 ->bind('homepage');
 
+$app->get('/about', function () use ($app) {
+  return $app->redirect('/about/company');
+});
+
+$app->get('/about/company', function () use ($app) {
+    return $app['twig']->render('about/company.html.haml');
+})
+->bind('about_company');
+
+
 $app->get('/about/culture', function () use ($app) {
     return $app['twig']->render('about/culture.html.haml');
 })
