@@ -30,16 +30,6 @@ module.exports = function(grunt) {
       }
     },
 
-    jade: {
-      build: {
-        expand: true,
-        cwd: 'source/',
-        src: ['*.jade', 'about/*.jade', 'work/*.jade'],
-        dest: 'build/',
-        ext: '.html'
-      }
-    },
-
     sass: {
       build: {
         files: {
@@ -57,11 +47,6 @@ module.exports = function(grunt) {
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
-      jade: {
-        files: ['source/**/*.jade'],
-        tasks: ['jade']
-      },
-
       sass: {
         files: 'source/sass/**/*.sass',
         tasks: ['sass']
@@ -70,11 +55,10 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-newer');
 
-  grunt.registerTask('build', ['copy','jade','sass']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('build', ['copy', 'sass']);
+  grunt.registerTask('default', ['build', 'watch']);
 }
