@@ -6,6 +6,7 @@ $app = new Silex\Application();
 
 $app['debug'] = true;
 
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../views',
 ));
@@ -23,6 +24,7 @@ if (php_sapi_name() === 'cli-server' && is_file($filename)) {
 
 $app->get('/', function () use ($app) {
     return $app['twig']->render('homepage.html.haml');
-});
+})
+->bind('homepage');
 
 $app->run();
