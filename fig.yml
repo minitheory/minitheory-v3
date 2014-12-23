@@ -1,7 +1,7 @@
 web:
   build: .
-  command: php -S 0.0.0.0:8000 -t /code
+  command: php -S 0.0.0.0:8000 -t /code/web /code/web/index.php
   ports:
     - "80:8000"
   volumes:
-    - ./build:/code
+    - .:/code
