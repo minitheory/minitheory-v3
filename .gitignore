@@ -10,3 +10,4 @@
 # Ignore Sass generated files
 /web/css
 /web/img/sprites
+/web/js
