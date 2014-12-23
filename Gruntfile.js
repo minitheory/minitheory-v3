@@ -4,12 +4,6 @@ module.exports = function(grunt) {
 
     copy: {
       build: {
-        files: [{
-          expand: true,
-          cwd: 'source/',
-          src: ['img/**', 'js/**'],
-          dest: 'build/'
-        },
         {
           src: 'bower_components/jquery/dist/jquery.min.js',
           dest: 'build/js/vendor/jquery.min.js'
@@ -64,11 +58,6 @@ module.exports = function(grunt) {
       sass: {
         files: 'source/sass/**/*.sass',
         tasks: ['sass']
-      },
-
-      others: {
-        files: ['img/**.*', '**/*.js'],
-        tasks: ['newer:copy']
       }
     }
   });
