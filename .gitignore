@@ -3,3 +3,6 @@
 /bower_components/*
 /build/*
 /node_modules/*
+
+# composer vendor files
+/vendor/
