@@ -37,4 +37,9 @@ $app->get('/work', function() use ($app) {
 })
 ->bind('work');
 
+$app->get('/work/travelmob', function() use ($app) {
+    return $app['twig']->render('work/travelmob.html.haml');
+})
+->bind('work_travelmob');
+
 $app->run();
