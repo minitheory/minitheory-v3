@@ -67,10 +67,28 @@ $app->get('/work/indinero', function() use ($app) {
 })
 ->bind('work_indinero');
 
-
 $app->get('/work/travelmob', function() use ($app) {
     return $app['twig']->render('work/travelmob.html.haml');
 })
 ->bind('work_travelmob');
+
+$app->error(function (\Exception $e, $code) use ($app) {
+    switch ($code) {
+        case 404:
+            if ($app['debug']) {
+                return;
+            }
+            else {
+                return $app['twig']->render('errors/404.html.haml');
+            }
+        default:
+            if ($app['debug']) {
+                return;
+            }
+            else {
+                return $app['twig']->render('errors/default.html.haml');
+            };
+    }
+});
 
 $app->run();
