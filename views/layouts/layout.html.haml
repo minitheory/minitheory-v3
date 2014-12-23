@@ -17,9 +17,10 @@
     %link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
     %link(rel="stylesheet" href="/assets/css/app.css")
     %script(src="/assets/js/vendor/modernizr.js")
-    %script(src='//use.typekit.net/tdf7xsc.js')
-    :javascript
-      try{Typekit.load();}catch(e){}
+    - if (app['env'] != 'development')
+      %script(src='//use.typekit.net/tdf7xsc.js')
+      :javascript
+        try{Typekit.load();}catch(e){}
   %body
     - include "layouts/_header.html.haml"
 
@@ -27,7 +28,8 @@
       %p Body content goes here
 
     - include "layouts/_footer.html.haml"
-    - include "layouts/_analytics.html.haml"
+    - if (app['env'] != 'development')
+      - include "layouts/_analytics.html.haml"
 
     %script(src="/assets/js/vendor/jquery.min.js")
     %script(src="/assets/js/vendor/foundation.min.js")
