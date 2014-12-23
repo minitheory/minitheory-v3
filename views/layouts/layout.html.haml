@@ -1,4 +1,3 @@
-- set aboutActiveNav = null
 - set page_title = page_title|default(null)
 - set meta_desc = meta_desc|default(null)
 
@@ -28,6 +27,7 @@
       %p Body content goes here
 
     - include "layouts/_footer.html.haml"
+    - include "layouts/_analytics.html.haml"
 
     %script(src="/js/vendor/jquery.min.js")
     %script(src="/js/vendor/foundation.min.js")
