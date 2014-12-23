@@ -27,6 +27,11 @@ $app->get('/', function () use ($app) {
 })
 ->bind('homepage');
 
+$app->get('/about/culture', function () use ($app) {
+    return $app['twig']->render('about/culture.html.haml');
+})
+->bind('about_culture');
+
 $app->get('/contact', function() use ($app) {
     return $app['twig']->render('contact.html.haml');
 })

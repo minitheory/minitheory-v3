@@ -1,0 +1,14 @@
+- set active_about_nav = active_about_nav|default("company")
+
+.theme-blue-gradient
+  .row
+    .page-section.half-padding.align-center.medium-12.columns
+      %h2 We're Minitheory
+
+.about-navigation.row
+  .medium-12.columns
+    %ul
+      %li
+        %a(href="/about/index.html" class=(active_about_nav == "company" ? "active" : "")) Company
+      %li
+        %a(href="#{path('about_culture')}" class=(active_about_nav == "culture" ? "active" : "")) Culture
