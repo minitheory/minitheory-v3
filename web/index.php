@@ -27,6 +27,11 @@ $app->get('/', function () use ($app) {
 })
 ->bind('homepage');
 
+$app->get('/contact', function() use ($app) {
+    return $app['twig']->render('contact.html.haml');
+})
+->bind('contact');
+
 $app->get('/services', function() use ($app) {
     return $app['twig']->render('services.html.haml');
 })

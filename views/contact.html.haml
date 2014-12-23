@@ -1,0 +1,36 @@
+- extends "layouts/layout.html.haml"
+
+- set active_nav = "contact"
+- set page_title = "Contact Us"
+- set meta_desc = "Contact us directly to talk about your project's requirements."
+
+- block page_content
+  .contact-banner
+    .row
+      .medium-12.columns
+        %h2
+          %span We're an international team
+          based in Singapore
+
+  .row
+    .align-center.medium-10.medium-centered.columns
+      .contact.page-section.half-padding
+        %h1 Have a project in mind? Let's talk.
+
+        %ul
+          %li
+            %img(src="/img/contact-weimeng.png")
+            %span.break Wei Meng
+          %li
+            %img(src="/img/contact-mike.png")
+            %span.break Mike
+          %li
+            %img(src="/img/contact-sylvia.png")
+            %span.break Sylvia
+
+        %a.button(href="mailto:hi@minitheory.com") Email Us
+
+        %p.location
+          Our office is located at
+          %span.address.break 4B Jiak Chuan Road, Singapore 089261
+        %img(src="/img/contact-location.jpg")
