@@ -1,0 +1,17 @@
+%header
+  .row
+    .large-7.columns
+      .menu-button
+        %a.js-site-menu-button
+          %i.fa.fa-bars
+      %a.logo(href="/") Minitheory
+    .large-5.columns
+      %ul.site-navigation.js-site-menu.align-right
+        %li
+          %a(href="/work.html" class=(activeNav == "work" ? "active" : "")) Work
+        %li
+          %a(href="/services.html" class=(activeNav == "services" ? "active" : "")) Services
+        %li
+          %a(href="/about/index.html" class=(activeNav == "about" ? "active" : "")) About
+        %li
+          %a.dark-border.button(href="/contact.html") Get in touch
