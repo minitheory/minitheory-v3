@@ -37,6 +37,11 @@ $app->get('/work', function() use ($app) {
 })
 ->bind('work');
 
+$app->get('/work/creative', function() use ($app) {
+    return $app['twig']->render('work/creative.html.haml');
+})
+->bind('work_creative');
+
 $app->get('/work/indinero', function() use ($app) {
     return $app['twig']->render('work/indinero.html.haml');
 })
