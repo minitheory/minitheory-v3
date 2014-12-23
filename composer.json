@@ -1,0 +1,8 @@
+{
+  "require": {
+    "silex/silex": "~1.2",
+    "twig/twig": ">= 1.8, < 2.0-dev",
+    "mthaml/silex-mthaml": "~1.0",
+    "symfony/twig-bridge": "*"
+  }
+}

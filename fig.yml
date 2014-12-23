@@ -1,7 +1,9 @@
 web:
   build: .
-  command: php -S 0.0.0.0:8000 -t /code
+  command: php -d variables_order=EGPCS -S 0.0.0.0:8000 -t /code /code/web/index.php
+  environment:
+    - SILEX_ENV=development
   ports:
     - "80:8000"
   volumes:
-    - ./build:/code
+    - .:/code

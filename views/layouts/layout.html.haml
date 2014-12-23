@@ -1,0 +1,37 @@
+- set page_title = page_title|default(null)
+- set meta_desc = meta_desc|default(null)
+
+!!!
+%html.no-js(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %meta(name="description" content="#{meta_desc}")
+    %meta(name="keywords" content="User Experience Design, Mobile Interface Design, User Interface Design, UX, UI, Singapore")
+    %title
+      Minitheory
+      - if page_title != null
+        = "| #{page_title}"
+      - else
+        = "| User experience design"
+    %link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+    %link(rel="stylesheet" href="/assets/css/app.css")
+    %script(src="/assets/js/vendor/modernizr.js")
+    - if (app['env'] != 'development')
+      %script(src='//use.typekit.net/tdf7xsc.js')
+      :javascript
+        try{Typekit.load();}catch(e){}
+  %body
+    - include "layouts/_header.html.haml"
+
+    - block page_content
+      %p Body content goes here
+
+    - include "layouts/_footer.html.haml"
+    - if (app['env'] != 'development')
+      - include "layouts/_analytics.html.haml"
+
+    %script(src="/assets/js/vendor/jquery.min.js")
+    %script(src="/assets/js/vendor/foundation.min.js")
+    %script(src="/assets/js/vendor/masonry.min.js")
+    %script(src="/assets/js/app.js")

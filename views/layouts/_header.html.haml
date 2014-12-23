@@ -1,0 +1,19 @@
+- set active_nav = active_nav|default("home")
+
+%header
+  .row
+    .large-7.columns
+      .menu-button
+        %a.js-site-menu-button
+          %i.fa.fa-bars
+      %a.logo(href="#{path('homepage')}") Minitheory
+    .large-5.columns
+      %ul.site-navigation.js-site-menu.align-right
+        %li
+          %a(href="#{path('work')}" class=(active_nav == "work" ? "active" : "")) Work
+        %li
+          %a(href="#{path('services')}" class=(active_nav == "services" ? "active" : "")) Services
+        %li
+          %a(href="#{path('about_company')}" class=(active_nav == "about" ? "active" : "")) About
+        %li
+          %a.dark-border.button(href="#{path('contact')}") Get in touch
