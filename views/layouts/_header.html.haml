@@ -10,7 +10,7 @@
     .large-5.columns
       %ul.site-navigation.js-site-menu.align-right
         %li
-          %a(href="/work.html" class=(active_nav == "work" ? "active" : "")) Work
+          %a(href="#{path('work')}" class=(active_nav == "work" ? "active" : "")) Work
         %li
           %a(href="#{path('services')}" class=(active_nav == "services" ? "active" : "")) Services
         %li

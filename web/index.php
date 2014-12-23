@@ -32,4 +32,9 @@ $app->get('/services', function() use ($app) {
 })
 ->bind('services');
 
+$app->get('/work', function() use ($app) {
+    return $app['twig']->render('work.html.haml');
+})
+->bind('work');
+
 $app->run();
