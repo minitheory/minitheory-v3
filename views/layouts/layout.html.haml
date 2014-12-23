@@ -1,19 +1,18 @@
-- set activeNav = "home"
 - set aboutActiveNav = null
-- set pageTitle = null
-- set metaDescription = null
+- set page_title = page_title|default(null)
+- set meta_desc = meta_desc|default(null)
 
 !!!
 %html.no-js(lang="en")
   %head
     %meta(charset="utf-8")
     %meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    %meta(name="description" content="#{metaDescription}")
+    %meta(name="description" content="#{meta_desc}")
     %meta(name="keywords" content="User Experience Design, Mobile Interface Design, User Interface Design, UX, UI, Singapore")
     %title
       Minitheory
-      - if pageTitle != null
-        = "| #{pageTitle}"
+      - if page_title != null
+        = "| #{page_title}"
       - else
         = "| User experience design"
     %link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
