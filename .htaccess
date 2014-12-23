@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  Options -MultiViews
+
+  RewriteEngine On
+
+  # If your site is not at the webroot level, uncomment and adjust the path
+  # to point to your directory, relative from the webroot.
+  # RewriteBase /path/to/app
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ web/index.php [QSA,L]
+</IfModule>
