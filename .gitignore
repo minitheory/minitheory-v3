@@ -6,3 +6,5 @@
 
 # composer vendor files
 /vendor/
+
+/web/css

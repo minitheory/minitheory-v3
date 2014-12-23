@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     sass: {
       build: {
         files: {
-          'build/css/app.css': 'source/sass/app.sass'
+          'web/css/app.css': 'source/sass/app.sass'
         },
         options: {
           bundleExec: true,
