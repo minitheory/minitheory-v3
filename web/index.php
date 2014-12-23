@@ -27,4 +27,9 @@ $app->get('/', function () use ($app) {
 })
 ->bind('homepage');
 
+$app->get('/services', function() use ($app) {
+    return $app['twig']->render('services.html.haml');
+})
+->bind('services');
+
 $app->run();
