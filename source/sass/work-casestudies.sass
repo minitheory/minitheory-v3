@@ -73,9 +73,16 @@
     > li
       list-style: none
 
-.case-study.travelmob
-  .case-study-banner-container
-    background-image: url(../img/case-study-travelmob-banner.jpg)
-  .case-study-headline
-    @media #{$medium-up}
-      width: rem-calc(500)
+.case-study
+  &.travelmob
+    .case-study-banner-container
+      background-image: url(../img/case-study-travelmob-banner.jpg)
+    .case-study-headline
+      @media #{$medium-up}
+        width: rem-calc(500)
+  &.creative
+    .case-study-banner-container
+      background-image: url(../img/case-study-creative-banner.jpg)
+    .case-study-headline
+      @media #{$medium-up}
+        width: rem-calc(700)
