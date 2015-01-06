@@ -1,0 +1,47 @@
+- extends "layouts/layout.html.haml"
+
+- set case_study_class = case_study_class|default(null)
+
+- block page_content
+  .case-study(class=case_study_class)
+    .case-study-banner-container
+      .case-study-banner.page-section
+        .row
+          .medium-12.columns
+            %h2.case-study-subheadline == Case Study &ndash; #{case_study_name}
+            %h1.case-study-headline == #{case_study_headline}
+            %a.case-study-site-url(href=case_study_link_url target="_blank") #{case_study_link_url|split("//")[1]}
+
+    .case-study-content.page-section
+      .row
+        .medium-8.medium-centered.columns
+          .row
+            .medium-9.columns
+              - block case_study_lead_content
+                %p Case study lead content goes here
+            .medium-3.columns
+              %aside.case-study-details
+                %h3.header Details
+                - block case_study_details
+                  %ul
+                    %li Details go here
+                %h3.header Services
+                - block case_study_services
+                  %ul
+                    %li Services go here
+                %h3.header Credits
+                - block case_study_credits
+                  %ul
+                    %li Credits go here
+
+      - block case_study_content
+        %p Content goes here
+
+      .row
+        .medium-12.columns
+          .outcome
+            - block case_study_outcome_content
+              %h2 The Outcome Headline
+
+              %h3 The Outcome Sub-Headline
+              %p Case study outcome content goes here

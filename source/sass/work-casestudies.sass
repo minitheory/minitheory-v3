@@ -1,10 +1,9 @@
 .case-study-banner
-  background-color: $dark-bg
+  background-color: rgba(0, 0, 0, 0.25)
   background-position: center center
   background-repeat: no-repeat
   background-size: cover
   color: $white
-  padding: rem-calc(100 0)
   h1, h2, h3, h4, h5
     color: $white
   .case-study-subheadline
@@ -73,3 +72,23 @@
     margin: rem-calc(0 0 18)
     > li
       list-style: none
+
+.case-study
+  &.indinero
+    .case-study-banner-container
+      background-image: url(../img/case-study-indinero-banner.jpg)
+    .case-study-headline
+      @media #{$medium-up}
+        width: rem-calc(700)
+  &.travelmob
+    .case-study-banner-container
+      background-image: url(../img/case-study-travelmob-banner.jpg)
+    .case-study-headline
+      @media #{$medium-up}
+        width: rem-calc(500)
+  &.creative
+    .case-study-banner-container
+      background-image: url(../img/case-study-creative-banner.jpg)
+    .case-study-headline
+      @media #{$medium-up}
+        width: rem-calc(700)
