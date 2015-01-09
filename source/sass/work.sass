@@ -1,21 +1,29 @@
+.work-panels
+  @media #{$small-only}
+    padding-top: rem-calc(15)
+
 .work-panel
   background-color: $light-bg
   background-position: center center
+  background-size: cover
   display: table
   height: rem-calc(285)
   margin-bottom: rem-calc(10)
   width: rem-calc(285)
   @media #{$small-only}
+    margin-bottom: rem-calc(15)
     margin-left: auto
     margin-right: auto
+    width: 100%
   &.double-height
     height: rem-calc(580)
     @media #{$small-only}
       height: rem-calc(285)
+      width: 100%
   &.double-width
     width: rem-calc(580)
     @media #{$small-only}
-      width: rem-calc(285)
+      width: 100%
   > a
     display: table-cell
     height: 100%
