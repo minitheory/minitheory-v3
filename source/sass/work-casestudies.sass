@@ -88,7 +88,13 @@
     font-size: rem-calc(36)
     font-weight: 100
     line-height: rem-calc(44)
-    padding-top: rem-calc(102)
+    @media #{$small-only}
+      margin-bottom: 1em
+      text-align: center
+      span.break:before
+        content: ""
+    @media #{$medium-up}
+      padding-top: rem-calc(102)
 
 .case-study
   img.drop-shadow
