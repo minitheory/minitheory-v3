@@ -66,7 +66,7 @@
         and what needed to be done.
 
       %p
-        %img(src="/assets/img/case-study-creative-product-listing.jpg")
+        %img.drop-shadow(src="/assets/img/case-study-creative-product-listing.jpg")
 
       %h3 User Experience Audit
       %p
@@ -95,21 +95,32 @@
 
 - block case_study_outcome_content
   .row
-    .medium-12.columns
-      .outcome
-        .row
-          .medium-8.medium-centered.columns
-            %h2 What We Learned
+    .medium-8.medium-centered.columns
+      %h2 What We Learned
 
-            %h3 Collaborative Client Relationship
-            %p
-              We took the time to build a collaborative relationship with
-              the client, working as a team to find answers to the problems
-              we were solving. This approach helped to foster trust and
-              momentum when it came to execution.
+      %h3 Collaborative Client Relationship
+      %p
+        We took the time to build a collaborative relationship with
+        the client, working as a team to find answers to the problems
+        we were solving. This approach helped to foster trust and
+        momentum when it came to execution.
 
-        .row
-          .medium-10.medium-centered.columns
-            %blockquote
-              Working with the client as opposed to working for the client
-              results in better work
+  .row
+    .medium-10.medium-centered.columns
+      %blockquote
+        Working with the client as opposed to working for the client
+        results in better work
+
+- block case_study_related
+  / .medium-3.columns
+  /   .bellabox.work-panel
+  /     %a(href="#")
+  /       %i.client-logos-large-sprite.client-logos-large-bellabox(title="Bellabox") Bellabox
+  .medium-3.columns
+    .travelmob.work-panel
+      %a(href="#{path('work_travelmob')}")
+        %i.client-logos-large-sprite.client-logos-large-travelmob(title="travelmob") travelmob
+  .medium-3.columns.end
+    .indinero.work-panel
+      %a(href="#{path('work_indinero')}")
+        %i.client-logos-large-sprite.client-logos-large-indinero(title="inDinero") inDinero

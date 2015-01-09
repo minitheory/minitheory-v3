@@ -37,11 +37,20 @@
       - block case_study_content
         %p Content goes here
 
-      .row
-        .medium-12.columns
-          .outcome
+      .outcome
+        .row
+          .medium-12.columns
             - block case_study_outcome_content
               %h2 The Outcome Headline
 
               %h3 The Outcome Sub-Headline
               %p Case study outcome content goes here
+
+    .case-study-related.page-section
+      .row
+        .medium-3.columns
+          .more-text
+            More
+            %span.break Case Studies
+        - block case_study_related
+          %p Related case studies go here

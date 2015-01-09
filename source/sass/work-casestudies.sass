@@ -1,3 +1,9 @@
+.case-study-banner-container
+  background-position: center center
+  @media #{$small-only}
+    background-position: left center
+    background-size: cover
+
 .case-study-banner
   background-color: rgba(0, 0, 0, 0.25)
   background-position: center center
@@ -9,11 +15,17 @@
   .case-study-subheadline
     font-size: rem-calc(20)
     text-transform: uppercase
+    @media #{$small-only}
+      font-size: rem-calc(15)
   .case-study-headline
     font-size: rem-calc(56)
     font-weight: $font-weight-lighter
     line-height: rem-calc(60)
     margin-bottom: rem-calc(32)
+    @media #{$small-only}
+      font-size: rem-calc(36)
+      line-height: rem-calc(44)
+      margin-bottom: inherit
   .case-study-site-url
     color: $white
     font-size: rem-calc(12)
@@ -26,7 +38,6 @@
 
 .case-study-content
   padding-top: rem-calc(32)
-  text-align: justify
   blockquote
     color: text-dark
     font-family: $font-family-serif
@@ -53,9 +64,15 @@
       font-size: rem-calc(14)
       font-style: italic
   .outcome
-    background-color: $light-bg
+    background-color: #E9F7FC
+    background-image: url(../img/logo_watermark.png)
+    background-position: bottom right
+    background-repeat: no-repeat
     margin-top: rem-calc(60)
     padding: rem-calc(60 0 40)
+    h2
+      @media #{$small-only}
+        font-size: rem-calc(36)
 
 .case-study-details
   margin-top: rem-calc(6)
@@ -73,7 +90,24 @@
     > li
       list-style: none
 
+.case-study-related
+  padding-top: 0
+  .more-text
+    color: $text-dark
+    font-size: rem-calc(36)
+    font-weight: 100
+    line-height: rem-calc(44)
+    @media #{$small-only}
+      margin-bottom: 1em
+      text-align: center
+      span.break:before
+        content: ""
+    @media #{$medium-up}
+      padding-top: rem-calc(102)
+
 .case-study
+  img.drop-shadow
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
   &.indinero
     .case-study-banner-container
       background-image: url(../img/case-study-indinero-banner.jpg)
