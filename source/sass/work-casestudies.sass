@@ -15,11 +15,17 @@
   .case-study-subheadline
     font-size: rem-calc(20)
     text-transform: uppercase
+    @media #{$small-only}
+      font-size: rem-calc(15)
   .case-study-headline
     font-size: rem-calc(56)
     font-weight: $font-weight-lighter
     line-height: rem-calc(60)
     margin-bottom: rem-calc(32)
+    @media #{$small-only}
+      font-size: rem-calc(36)
+      line-height: rem-calc(44)
+      margin-bottom: inherit
   .case-study-site-url
     color: $white
     font-size: rem-calc(12)
@@ -64,6 +70,9 @@
     background-repeat: no-repeat
     margin-top: rem-calc(60)
     padding: rem-calc(60 0 40)
+    h2
+      @media #{$small-only}
+        font-size: rem-calc(36)
 
 .case-study-details
   margin-top: rem-calc(6)
