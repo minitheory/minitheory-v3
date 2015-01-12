@@ -1,0 +1,73 @@
+- extends "work/_casestudy.html.haml"
+
+- set active_nav = "work"
+- set page_title = "Our Work | Ninja Accountant"
+- set meta_desc = "Learn more about our work for travelmob, an online marketplace for renting vacation stays."
+
+- set case_study_class = "ninja-accountant"
+- set case_study_type = "Project"
+- set case_study_name = "Ninja Accountant"
+- set case_study_headline = "An accounting company that specialises in startups"
+- set case_study_link_url = "//ninja-accountant.com"
+
+- block case_study_details
+  %ul
+    %li Designed in 2014
+    %li Responsive website
+    %li Cool cartoons
+    %li Featured on Line25.com
+
+- block case_study_services
+  %ul
+    %li Frontend Development
+    %li Art direction
+    %li Web design
+    %li Illustration
+
+- block case_study_credits
+  %ul
+    %li Mike Chen
+    %li Sheldon Cheng
+    %li Tian Meng
+    %li Sylvia Ng
+    %li Pizza Yap
+
+- block case_study_lead_content
+  %p.lead
+    Ninja Accountant (now renamed SC Cloud Accountants) is an accounting company
+    that specialises in startups.
+  %p.lead
+    Featured on Chris Spooner's Line 25 blog:
+    %a(href="http://line25.com/articles/30-beautiful-blue-websites-for-design-inspiration" target="_blank")
+      30 Beautiful Blue Websites for Design Inspiration
+
+- block case_study_content
+  .row
+    .medium-12.columns.align-center
+      %figure.image-container.for-work-page
+        %img(src="/assets/img/case-study-ninja-lead.jpg")
+
+  .row
+    .medium-12.columns.align-center
+      %figure.image-container.for-work-page
+        %img.drop-shadow(src="/assets/img/case-study-ninja-page.jpg")
+
+  .row
+    .medium-12.columns.align-center
+      %figure.image-container.for-work-page
+        %img(src="/assets/img/case-study-ninja-illustrations.png")
+        %figcaption Illustration for product tour pages
+
+- block case_study_related
+  .medium-3.columns
+    .iji.work-panel
+      %a(href="#")
+        %i.client-logos-large-sprite.client-logos-large-iji(title="爱己") 爱己
+  .medium-3.columns.end
+    .packnada.work-panel
+      %a(href="#")
+        %i.client-logos-large-sprite.client-logos-large-packnada(title="Packnada") Packnada
+  .medium-3.columns.end
+    .skinnymint.work-panel
+      %a(href="#")
+        %i.client-logos-large-sprite.client-logos-large-skinnymint(title="SkinnyMint") SkinnyMint

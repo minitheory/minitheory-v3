@@ -8,7 +8,7 @@
       .case-study-banner.page-section
         .row
           .medium-12.columns
-            %h2.case-study-subheadline == Case Study &ndash; #{case_study_name}
+            %h2.case-study-subheadline == #{case_study_type} &ndash; #{case_study_name}
             %h1.case-study-headline == #{case_study_headline}
             %a.case-study-site-url(href=case_study_link_url target="_blank") #{case_study_link_url|split("//")[1]}
 
@@ -37,20 +37,22 @@
       - block case_study_content
         %p Content goes here
 
-      .outcome
-        .row
-          .medium-12.columns
-            - block case_study_outcome_content
-              %h2 The Outcome Headline
+      - if block("case_study_outcome_content")|trim is not empty
+        .outcome
+          .row
+            .medium-12.columns
+              - block case_study_outcome_content
+              - endblock
 
-              %h3 The Outcome Sub-Headline
-              %p Case study outcome content goes here
 
     .case-study-related.page-section
       .row
         .medium-3.columns
           .more-text
             More
-            %span.break Case Studies
+            - if case_study_type == "Case Study"
+              %span.break Case Studies
+            - else
+              Works
         - block case_study_related
           %p Related case studies go here

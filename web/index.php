@@ -71,6 +71,11 @@ $app->get('/work/indinero', function() use ($app) {
 })
 ->bind('work_indinero');
 
+$app->get('/work/ninja-accountant', function() use ($app) {
+  return $app['twig']->render('work/ninjaaccountant.html.haml');
+})
+->bind('work_ninja_accountant');
+
 $app->get('/work/travelmob', function() use ($app) {
     return $app['twig']->render('work/travelmob.html.haml');
 })
