@@ -57,6 +57,8 @@
   .image-container
     margin: rem-calc(20 0 0)
     text-align: center
+    &.for-work-page
+      margin-top: rem-calc(100)
     &.before-header
       padding-bottom: 0
     figcaption
@@ -115,6 +117,12 @@
   &.indinero
     .case-study-banner-container
       background-image: url(../img/case-study-indinero-banner.jpg)
+    .case-study-headline
+      @media #{$medium-up}
+        width: rem-calc(700)
+  &.ninja-accountant
+    .case-study-banner-container
+      background-image: url(../img/case-study-ninja-banner.jpg)
     .case-study-headline
       @media #{$medium-up}
         width: rem-calc(700)

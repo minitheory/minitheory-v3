@@ -50,6 +50,9 @@
         .medium-3.columns
           .more-text
             More
-            %span.break Case Studies
+            - if case_study_type == "Case Study"
+              %span.break Case Studies
+            - else
+              Works
         - block case_study_related
           %p Related case studies go here
