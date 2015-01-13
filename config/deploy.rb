@@ -34,8 +34,10 @@ set :log_level, :info
 # Default value for keep_releases is 5
 set :keep_releases, 1
 
-namespace :deploy do
+set :rbenv_type, :user
+set :rbenv_ruby, '2.1.5'
 
+namespace :deploy do
   task :build_site do
     on roles(:web) do
       within release_path do
@@ -55,5 +57,4 @@ namespace :deploy do
       # end
     end
   end
-
 end
