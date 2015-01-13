@@ -42,6 +42,7 @@ namespace :deploy do
     on roles(:web) do
       within release_path do
         execute :bower, 'install'
+        execute :bundle, 'install --without=deployment'
         execute :grunt, 'build'
       end
     end
