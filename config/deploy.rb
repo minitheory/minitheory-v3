@@ -37,6 +37,10 @@ set :keep_releases, 1
 set :rbenv_type, :user
 set :rbenv_ruby, '2.1.5'
 
+set :default_env, {
+  'PATH' => '$HOME/.rbenv/shims:$PATH',
+}
+
 namespace :deploy do
   task :build_site do
     on roles(:web) do
