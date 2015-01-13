@@ -36,6 +36,17 @@ set :keep_releases, 1
 
 namespace :deploy do
 
+  task :build_site do
+    on roles(:web) do
+      within release_path do
+        execute :bower, 'install'
+        execute :grunt, 'build'
+      end
+    end
+  end
+
+  after :updated, :build_site
+
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
