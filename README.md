@@ -54,25 +54,20 @@ And you're set!
   * `./views`: Haml templates
   * ``./web`: Silex router index.php file goes here
 
-## Deploying
+## Deployment
 
-When you are ready to deploy the site, first run:
+It is necessary to have [Capistrano](http://capistranorb.com/) 3.x to deploy the
+site.
 
-```
-grunt build
-```
+First, add the production git repository as a remote:
 
-This will generate and copy the appropriate files into the `assets` directory.
-
-Next, upload the following directories and files to the server:
-
-```
-.htaccess
-assets
-vendor
-views
-web
+```bash
+git remote add production gitolite3@megatron.minitheory.com:minitheory-website.git
 ```
 
-**Note:** The `vendor` folder does not need to be re-uploaded unless your have
-changed the project's PHP dependencies in `composer.json`.
+To deploy to production:
+
+```bash
+git push production master # or other branch name
+cap production deploy
+```
