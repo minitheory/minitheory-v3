@@ -1,14 +1,8 @@
 {
   "name": "foundation-libsass-template",
   "version": "0.0.1",
-  "dependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-copy": "^0.7.0",
-    "grunt-contrib-sass": "^0.8.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-newer": "^0.8.0",
     "gulp": "^3.8.10",
     "gulp-ruby-sass": "^1.0.0-alpha.2",
     "gulp-autoprefixer": "^2.1.0"
