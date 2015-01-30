@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-    sass= require('gulp-ruby-sass'),
+    sass = require('gulp-ruby-sass'),
+    rename = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer');
 
 // Styles
@@ -36,6 +37,7 @@ gulp.task('build', function(){
   gulp.src('bower_components/modernizr/modernizr.js')
     .pipe(gulp.dest('assets/js/vendor/'));
   gulp.src('bower_components/masonry/dist/masonry.pkgd.min.js')
+    .pipe(rename('masonry.min.js'))
     .pipe(gulp.dest('assets/js/vendor/'));
 
   gulp.start('sass');
