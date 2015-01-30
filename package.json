@@ -8,6 +8,9 @@
   },
   "devDependencies": {
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-newer": "^0.8.0"
+    "grunt-newer": "^0.8.0",
+    "gulp": "^3.8.10",
+    "gulp-ruby-sass": "^1.0.0-alpha.2",
+    "gulp-autoprefixer": "^2.1.0"
   }
 }
