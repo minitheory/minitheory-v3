@@ -26,8 +26,8 @@ gulp.task('watch', function(){
   gulp.watch('source/sass/**/*.sass', ['sass']);
 });
 
-//Build
-gulp.task('build', function(){
+// Copy
+gulp.task('copy', function(){
   gulp.src('source/js/**')
     .pipe(gulp.dest('assets/js'));
   gulp.src('bower_components/jquery/dist/jquery.min.js')
@@ -39,6 +39,10 @@ gulp.task('build', function(){
   gulp.src('bower_components/masonry/dist/masonry.pkgd.min.js')
     .pipe(rename('masonry.min.js'))
     .pipe(gulp.dest('assets/js/vendor/'));
+});
 
+//Build
+gulp.task('build', function(){
+  gulp.start('copy');
   gulp.start('sass');
 });
