@@ -6,19 +6,7 @@
   @media #{$small-only}
     .columns
       text-align: center
-  .logo
-    +retina-background(logo, png, 50px, 46px)
-    background-repeat: no-repeat
-    display: inline-block
-    height: 54px
-    margin-right: rem-calc(10)
-    text-indent: rem-calc(-9999)
-    vertical-align: middle
-    width: 46px
-    @media #{$small-only}
-      display: block
-      margin-left: auto
-      margin-right: auto
+
   .social-icons
     font-size: rem-calc(20)
     margin: 0
@@ -43,3 +31,28 @@
   text-align: center
   h2
     margin-bottom: rem-calc(31)
+
+.footer-logo
+  display: table
+  @media #{$small-only}
+    display: block
+  .logo
+    +retina-background(logo, png, 50px, 46px)
+    background-repeat: no-repeat
+    background-position: 50%
+    display: table-cell
+    height: 54px
+    margin-right: rem-calc(10)
+    text-indent: rem-calc(-9999)
+    vertical-align: middle
+    width: 46px
+    @media #{$small-only}
+      display: block
+      margin-left: auto
+      margin-right: auto
+  span
+    display: table-cell
+    vertical-align: middle
+    padding-left: 0.5em
+    @media #{$small-only}
+      display: block
