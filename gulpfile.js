@@ -39,6 +39,8 @@ gulp.task('copy', function(){
   gulp.src('bower_components/masonry/dist/masonry.pkgd.min.js')
     .pipe(rename('masonry.min.js'))
     .pipe(gulp.dest('assets/js/vendor/'));
+  gulp.src('bower_components/picturefill/dist/picturefill.min.js')
+    .pipe(gulp.dest('assets/js/vendor/'));
 });
 
 //Build
