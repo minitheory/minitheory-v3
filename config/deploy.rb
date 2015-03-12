@@ -47,7 +47,7 @@ namespace :deploy do
       within release_path do
         execute :bower, 'install'
         execute :bundle, 'install --without=deployment'
-        execute :grunt, 'build'
+        execute :gulp, 'build'
       end
     end
   end
