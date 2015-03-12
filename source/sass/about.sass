@@ -1,45 +1,117 @@
 .about-navigation
   border-bottom: solid 1px $border-color
-  padding: rem-calc(40 0)
+  padding: rem-calc(0 0 40)
   ul
     margin: 0
     text-align: center
     > li
-      display: inline
+      display: inline-block
       font-size: rem-calc(14)
-      padding: rem-calc(0 15)
       text-transform: uppercase
       a
-        color: black
+        color: #fff
+        display: block
+        border-radius: 15px
+        padding: rem-calc(5 15 3)
       a.active
-        color: $accent
+        background: rgba(#236898, 0.5)
 
 .minions
   .minion
     text-align: center
     margin-bottom: $paragraph-margin-bottom
+    padding: 0 rem-calc(5)
+    &:nth-child(4n+1)
+      clear: left
     img
       margin-bottom: 8px
+      width: 100%
     p
-      line-height: 1.3
+      line-height: 1.4
       &.name
         margin-bottom: 0
         font-size: rem-calc(20)
-        font-weight: bold
+        color: $text-dark
 
+    @media #{$small-only}
+      &:nth-child(2n+1)
+        clear: left
 
 
 .culture.page-section
-  h1
-    font-size: rem-calc(36)
-    margin-bottom: rem-calc(20)
   h2
-    font-size: rem-calc(27)
+    margin-bottom: rem-calc(20)
   blockquote
     font-family: $font-family-serif
     font-style: italic
+    font-size: rem-calc(26)
+    &:before
+      content: "\201C"
+      display: block
+      font-family: $font-family-sans-serif
+      color: #A0D7DB
+      font-size: rem-calc(120)
+      font-style: normal
+      line-height: 0
+      margin: 0 0 rem-calc(10)
+
+    cite
+      font-style: normal
+      font-size: rem-calc(22)
+      font-family: $font-family-sans-serif
+      font-weight: 100
+      margin-top: rem-calc(10)
+      &:before
+        content: ""
+
+
+  picture
+    width: 110px
+    display: block
+    margin: 1em auto 1.5em
+  .our-goal
+    h2
+      line-height: 1.1
+    margin: rem-calc(50) 0 rem-calc(20)
+    @media #{$medium-up}
+      border-right: 2px solid #F9FAFA
+    @media #{$small-only}
+      img
+        display: block
+        margin: 0 auto rem-calc(10)
+  .principles
+    margin-left: 25%
+    margin-bottom: rem-calc(20)
+    @media #{$small-only}
+      margin-left: 0
+
+  ol
+    list-style-type: decimal-leading-zero
+    margin-left: 0
+    color: #A0D7DB
+    @media #{$small-only}
+      margin-left: 2em
+  li
+    margin: rem-calc(15) 0
+    span
+      color: $text
 
 .culture-photos
   border-bottom: solid 1px $border-color
   margin-top: rem-calc(40)
   padding-bottom: rem-calc(40)
+
+.what-we-do
+  text-align: center
+  margin-top: rem-calc(20)
+  margin-bottom: rem-calc(30)
+  .columns
+    padding: 0 rem-calc(40)
+
+.blockquote-section
+  background-color: #F9FAFA
+  text-align: center
+  padding: rem-calc(90 0 30)
+
+.meet-the-minions
+  margin: rem-calc(30) auto rem-calc(40)
