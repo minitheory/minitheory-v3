@@ -22,11 +22,16 @@
 
 .services.page-section
   text-align: center
+  picture
+    width: 110px
+    display: block
+    margin: 1em auto
 
 .clients.page-section
   text-align: center
   ul.clients-list
     margin-left: 0
+    font-size: 0
     > li
       display: inline-block
       list-style: none
@@ -37,6 +42,10 @@
         width: 25%
       @media #{$small-only}
         width: 50%
+    a
+      display: inline-block
+    img
+      max-width: 50%
 
 .testimonials
   img

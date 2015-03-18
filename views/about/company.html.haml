@@ -7,83 +7,111 @@
 - block page_content
   - include "about/_header.html.haml"
 
-  .culture.page-section.half-padding.row
-    .medium-6.columns
-      %h1 What We Do
-      %p.lead
-        Minitheory is a digital design studio, founded in 2012. We deliver
-        quality user experience, interaction and visual design for web, mobile
-        devices and software applications.
-    .medium-6.columns
-      %h2 We have experience in
-      %ul
-        %li designing user-friendly web and software interfaces
-        %li prototyping new product features
-        %li creating new products
+  .culture.page-section.half-padding
+    .row
+      .medium-10.medium-offset-1.columns.align-center
+        %h2 What We Do
+        %p.lead
+          Minitheory is a digital design studio, founded in 2012. We deliver
+          quality user experience, interaction and visual design for web, mobile
+          devices and software applications.
+    .row.what-we-do
+      .medium-4.columns
+        %picture
+          %source(srcset="/assets/img/icon-design@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %source(srcset="/assets/img/icon-design@3x.png" media="(min-resolution: 288dpi), (-webkit-min-device-pixel-ratio: 3)")
+          %img(srcset="/assets/img/icon-design.png" alt="")
+        Designing user-friendly web and software interfaces
+      .medium-4.columns
+        %picture
+          %source(srcset="/assets/img/icon-prototyping@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %source(srcset="/assets/img/icon-prototyping@3x.png" media="(min-resolution: 288dpi), (-webkit-min-device-pixel-ratio: 3)")
+          %img(srcset="/assets/img/icon-prototyping.png" alt="")
+        Prototyping new product features
+      .medium-4.columns
+        %picture
+          %source(srcset="/assets/img/icon-product@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %source(srcset="/assets/img/icon-product@3x.png" media="(min-resolution: 288dpi), (-webkit-min-device-pixel-ratio: 3)")
+          %img(srcset="/assets/img/icon-product.png" alt="")
+        Creating new products
+    .row
+      %hr
+    .row
+      .medium-8.columns.our-goal
+        .row
+          .medium-4.columns
+            %img(src="/assets/img/zzz.svg")
+          .medium-8.columns
+            %h2 We want to make software simple and useful.
 
-      %p
-        %strong We want to make software simple and useful.
+            %p
+              We love computers, but it’s unfortunate that some software make us
+              feel like idiots. We want to change that. We expect software to be
+              intuitively designed  – and ultimately, useful.
 
-      %p
-        We love computers, but it’s unfortunate that some software make us
-        feel like idiots. We want to change that. We expect software to be
-        intuitively designed  – and ultimately, useful.
+      .medium-4.columns
+        .principles
+          %h3 Guiding principles
+          %ol
+            %li
+              %span Technology should make life simpler
+            %li
+              %span Design based on how people think, work and behave
+            %li
+              %span Design to solve problems, not to paint pretty pictures
+            %li
+              %span Experiment, fail fast and iterate
 
-      %blockquote
-        The computer is the equivalent of a bicycle for our minds.
-        %cite Steve Jobs
-
-      %h2 Guiding principles
-      %ol
-        %li Technology should make life simpler
-        %li Design based on how people think, work and behave
-        %li Design to solve problems, not to paint pretty pictures
-        %li Experiment, fail fast and iterate
+    .blockquote-section
+      .row
+        %blockquote.medium-12.columns
+          The computer is the equivalent of a bicycle for our minds.
+          %cite Steve Jobs
 
   .meet-the-minions.row
     .align-center.medium-12.columns
-      %h2 Meet the Minions Behind Minitheory
+      %h2 Meet the Minions
   .minions.row
-    .minion.medium-3.columns
+    .minion.medium-3.small-6.columns
       %img(src="/assets/img/about-mike.jpg" alt="Mike Chen, CEO / Co-founder, Minitheory")
       %p.name Mike Chen
       %p.position CEO / Co-founder
-    .minion.medium-3.columns
+    .minion.medium-3.small-6.columns
       %img(src="/assets/img/about-junlin.jpg" alt="Lee Jun Lin, Co-founder, Minitheory")
       %p.name Lee Jun Lin
       %p.position Co-founder
-    .minion.medium-3.columns
+    .minion.medium-3.small-6.columns
       %img(src="/assets/img/about-weimeng.jpg" alt="Lee Wei Meng, COO, Minitheory")
       %p.name Lee Wei Meng
       %p.position COO
-    .minion.medium-3.columns
+    .minion.medium-3.small-6.columns
       %img(src="/assets/img/about-sheldon.jpg" alt="Sheldon Cheng, Frontend Developer, Minitheory")
       %p.name Sheldon Cheng
       %p.position Frontend Developer
-    .minion.medium-3.columns
-      %img(src="/assets/img/about-zenan.jpg" alt="Liu Zenan, All Round Bad Ass, Minitheory")
+    .minion.medium-3.small-6.columns
+      %img(src="/assets/img/about-zenan.jpg" alt="Liu Zenan, User Interface Designer")
       %p.name Liu Zenan
-      %p.position Interaction Designer
-    .minion.medium-3.columns
+      %p.position User Interface Designer
+    .minion.medium-3.small-6.columns
       %img(src="/assets/img/about-charmaine.jpg" alt="Charmaine Low, Interaction Designer, Minitheory")
       %p.name Charmaine Low
       %p.position Interaction Designer
-    .minion.medium-3.columns
-      %img(src="/assets/img/about-pizza.jpg" alt="Pizza Yap, Senior Designer, Minitheory")
+    .minion.medium-3.small-6.columns
+      %img(src="/assets/img/about-pizza.jpg" alt="Pizza Yap, User Interface Designer, Minitheory")
       %p.name Pizza Yap
-      %p.position Senior Designer
-    .minion.medium-3.columns
+      %p.position User Interface Designer
+    .minion.medium-3.small-6.columns
       %img(src="/assets/img/about-sylvia.jpg" alt="Sylvia Ng, Project Manager, Minitheory")
       %p.name Sylvia Ng
       %p.position Project Manager
-    .minion.medium-3.columns
+    .minion.medium-3.small-6.columns
       %img(src="/assets/img/about-natacha.jpg" alt="Natacha Ruivo, Interaction Designer, Minitheory")
       %p.name Natacha Ruivo
       %p.position Interaction Designer
-    .minion.medium-3.columns
+    .minion.medium-3.small-6.columns
       %img(src="/assets/img/about-masha.jpg" alt="Masha Zimovich, User Interface Designer, Minitheory")
       %p.name Masha Zimovich
       %p.position User Interface Designer
-    .minion.medium-3.columns.end
+    .minion.medium-3.small-6.columns.end
       %a(href="mailto:jobs@minitheory.com")
         %img(src="/assets/img/about-youarenext.png" alt="Are you the next?")

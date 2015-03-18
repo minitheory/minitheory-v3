@@ -2,6 +2,7 @@
   "name": "foundation-libsass-template",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "masonry": "~3.2.2"
+    "masonry": "~3.2.2",
+    "picturefill": "~2.2.0"
   }
 }
