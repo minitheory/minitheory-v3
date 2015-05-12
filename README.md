@@ -26,7 +26,7 @@ You'll need to have the following items installed before continuing:
   * [Composer](http://getcomposer.org/)
   * [Ruby](http://www.ruby-lang.org/)
   * [Node.js](http://nodejs.org)
-  * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
+  * [Gulp](http://gulpjs.com/): Run `[sudo] npm install -g gulp`
   * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
 
 ## Quickstart
@@ -39,7 +39,7 @@ composer install && npm install && bower install && bundle install
 While you're working on your project, run:
 
 ```
-grunt watch
+gulp watch
 ```
 
 And you're set!
