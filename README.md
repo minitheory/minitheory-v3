@@ -50,6 +50,12 @@ gulp watch
 
 This will automatically recompile any edits to SASS files.
 
+To start the website using PHP's built-in webserver, run:
+
+```
+SILEX_ENV=development php -d variables_order=EGPCS -S 0.0.0.0:8000 -t ./ ./web/index.php
+```
+
 ## Directory Structure
 
   * `./assets/img`: Images go here
