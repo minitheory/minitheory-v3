@@ -107,6 +107,12 @@
       padding-top: rem-calc(102)
 
 .case-study
+  .background
+    padding: 50px 0
+  .background-green
+    background: $background-blue
+  .image
+    text-align: center
   img.drop-shadow
     box-shadow: 0 0 10px rgba(0,0,0,0.1)
   &.indinero
@@ -135,3 +141,9 @@
     .case-study-headline
       @media #{$medium-up}
         width: rem-calc(700)
+  &.bellabox
+    .case-study-banner-container
+      background-image: url(../img/case-study-bellabox-banner.png)
+    .case-study-headline
+      @media #{$medium-up}
+        width: rem-calc(500)
