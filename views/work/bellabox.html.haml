@@ -1,0 +1,151 @@
+- extends "work/_casestudy.html.haml"
+
+- set active_nav = "work"
+- set page_title = "Our Work | Bellabox"
+- set meta_desc = "Redesigning Bellabox, the largest beauty box e-commerce in Australia"
+
+- set case_study_class = "bellabox"
+- set case_study_type = "Project"
+- set case_study_name = "Bellabox e-commerce website"
+- set case_study_headline = "Subscribing to the best in beauty"
+- set case_study_link_url = "//bellabox.com.au"
+
+- block case_study_lead_content
+  %p.lead
+    bellabox is an Australian beauty subscription service and online store. Each
+    month, bellabox's subscribers receive a box of beauty samples, specially
+    tailored to match their beauty profile.
+
+  %p.lead
+    Together with a development partner, Minitheory worked with the bellabox
+    team to revamp their website, crafting a seamless experience across their
+    subscription, e-commerce and editorial websites.
+  %p.lead
+    As a result, bellabox's subscribers could now easily buy, leave
+    feedback and learn more about their products.
+
+- block case_study_details
+  %ul
+    %li Sep 2013 - Apr 2014
+    %li e-commerce website
+
+- block case_study_services
+  %ul
+    %li UX Research
+    %li UX Design
+    %li Interaction Design
+    %li Visual Interface Design
+    %li Front-end development
+
+- block case_study_credits
+  %ul
+    %li Mike Chen
+    %li Charmaine Low
+    %li Pizza Yap
+    %li Sheldon Cheng
+    %li
+      %a(href="http://www.redairship.com/" rel="nofollow") Red Airship
+      (Drupal)
+
+- block case_study_content
+
+  %p.image
+    %img(src="/assets/img/case-study-bellabox-1.png")
+
+  .row
+    .medium-8.medium-centered.columns
+      %h3 Getting creative, together
+      %p
+        We sat down together with the stakeholders to understand their goals
+        for the revamp and work out a strategy together for the website. We
+        found out that besides being an online storefront, the website also
+        had to fulfill marketing and branding functions. These conversations
+        with the stakeholders helped us map out what we wanted to achieve
+        and what needed to be done.
+
+  .row
+    .medium-8.medium-centered.columns
+      %h3 Addressing the biggest pain point: &ldquo;Where's my box?&rdquo;
+      %p
+        Based on user research and feedback from bellabox's customer
+        support team, the most common question subscribers asked was &ldquo;where&rsquo;s
+        my box?&rdquo;. It was obvious that the biggest painpoint for
+        subscribers was not knowing when their box would arrive that month.
+
+      %p
+        To address this pain point, we created a dashboard where subscribers
+        could view their box&rsquo;s status &ndash; preparing, shipped and an
+        estimated delivery date. We also enhanced the new subscriber experience,
+        ensuring that they get immediate feedback on when their first box will
+        arrive.
+
+  %p.image
+    %img(src="/assets/img/case-study-bellabox-2.png")
+
+  .row
+    .medium-8.medium-centered.columns
+      %h3 Making the beauty profile fun to fill in
+      %p
+        Each month, bellabox picks beauty samples for each subscriber&rsquo;s
+        box based on their preferences indicated in their own beauty profiles.
+        This allows subscribers to get products specifically tailored to their
+        own preferences.
+      %p
+        Despite this, more than 2,000 subscribers never filled in their beauty
+        profiles! We identified the plain-looking entry form to be the culprit
+        and set out to make filling in the beauty profile a more fun and engaging
+        experience for subscribers.
+      %p
+        We designed a more visual and interactive format for filling in answers
+        and worked with the team to craft clearer questions:
+
+
+  %p.image.background.accent-background
+    %img(src="/assets/img/case-study-bellabox-3.png")
+
+  .row
+    .medium-8.medium-centered.columns
+      %h3 Ensuring visual consistency and saving time with style guides
+      %p
+        The bellabox website had about 30 distinct page structures and
+        several types of widgets. When we mapped it all out, we knew that we had
+        to design a visual system to maintain consistency throughout the website.
+      %p
+        The style guide we prepared for the bellabox team covered common
+        page structures, widgets and components, helping to ensure consistency
+        as new interface elements are added.
+      %p
+        Additionally, time savings were achieved as the bellabox team
+        could quickly create new pages from the templates we provided.
+
+  %p.image
+    %img(src="/assets/img/case-study-bellabox-4.png")
+
+  .row
+    .medium-8.medium-centered.columns
+      %h3 Integrating agile development and design
+      %p
+        For six months, we worked closely with the bellabox team and a
+        development partner &ndash; it was our first time integrating design
+        methods such as user research, ideation and prototyping into an agile
+        workflow.
+      %p
+        It was a lot of learning and growing for us, and we were proud to launch
+        the bellabox website in September 2014!
+
+  %p.image
+    %img(src="/assets/img/case-study-bellabox-5.png")
+
+- block case_study_related
+  .medium-3.columns
+    .travelmob.work-panel
+      %a(href="#{path('work_travelmob')}")
+        %i.client-logos-large-sprite.client-logos-large-travelmob(title="travelmob") travelmob
+  .medium-3.columns.end
+    .creative.work-panel
+      %a(href="#{path('work_creative')}")
+        %i.client-logos-large-sprite.client-logos-large-creative(title="Creative Technologies") Creative Technologies
+  .medium-3.columns.end
+    .indinero.work-panel
+      %a(href="#{path('work_indinero')}")
+        %i.client-logos-large-sprite.client-logos-large-indinero(title="inDinero") inDinero

@@ -81,6 +81,11 @@ $app->get('/work/travelmob', function() use ($app) {
 })
 ->bind('work_travelmob');
 
+$app->get('/work/bellabox', function() use ($app) {
+    return $app['twig']->render('work/bellabox.html.haml');
+})
+->bind('work_bellabox');
+
 $app->error(function (\Exception $e, $code) use ($app) {
     switch ($code) {
         case 404:
