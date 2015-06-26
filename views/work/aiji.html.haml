@@ -1,0 +1,53 @@
+- extends "work/_casestudy.html.haml"
+
+- set active_nav = "work"
+- set page_title = "Our Work | 爱己"
+- set meta_desc = "Learn more about our work for 爱己, a beauty app for women."
+
+- set case_study_class = "aiji"
+- set case_study_type = "Project"
+- set case_study_name = "Ai Ji"
+- set case_study_headline = "A beauty app for you on your fingertips"
+- set case_study_link_url = "//itunes.apple.com/TR/app/id933737725"
+- set case_study_link_text = "View in App Store"
+
+- block case_study_lead_content
+  %p.lead
+    爱己(Ai Ji) is an app for women who want to look beautiful every day. It gives beauty tips based on the weather conditions at your location. The app also connects to a device that reads your skin condition, and lets you know when it’s time to book a session at your favourite beauty saloon.
+
+- block case_study_details
+  %ul
+    %li Designed in 2014
+    %li Client based in China
+    %li Mobile app
+
+- block case_study_services
+  %ul
+    %li Interaction Design
+    %li Visual Interface Design
+    %li Illustration
+
+- block case_study_credits
+  %ul
+    %li Tian Meng
+    %li Pizza Yap
+    %li Sylvia Ng
+
+- block case_study_content
+
+  %p.image
+    %img(src="/assets/img/case-study-aiji-1.jpg")
+
+- block case_study_related
+  .medium-3.columns
+    .travelmob.work-panel
+      %a(href="#{path('work_travelmob')}")
+        %i.client-logos-large-sprite.client-logos-large-travelmob(title="travelmob") travelmob
+  .medium-3.columns.end
+    .creative.work-panel
+      %a(href="#{path('work_bellabox')}")
+        %i.client-logos-large-sprite.client-logos-large-bellabox(title="Bellabox") Bellabox
+  .medium-3.columns.end
+    .indinero.work-panel
+      %a(href="#{path('work_indinero')}")
+        %i.client-logos-large-sprite.client-logos-large-indinero(title="inDinero") inDinero

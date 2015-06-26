@@ -86,6 +86,11 @@ $app->get('/work/bellabox', function() use ($app) {
 })
 ->bind('work_bellabox');
 
+$app->get('/work/aiji', function() use ($app) {
+    return $app['twig']->render('work/aiji.html.haml');
+})
+->bind('work_aiji');
+
 $app->error(function (\Exception $e, $code) use ($app) {
     switch ($code) {
         case 404:
