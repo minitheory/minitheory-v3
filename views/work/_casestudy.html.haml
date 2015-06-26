@@ -11,7 +11,9 @@
             %h2.case-study-subheadline == #{case_study_type} &ndash; #{case_study_name}
             %h1.case-study-headline == #{case_study_headline}
             - if (case_study_link_url)
-              %a.case-study-site-url(href=case_study_link_url target="_blank") #{case_study_link_url|split("//")[1]}
+              - if not case_study_link_text
+                - set case_study_link_text = case_study_link_url|split("//")[1]
+              %a.case-study-site-url(href=case_study_link_url target="_blank") #{case_study_link_text}
 
     .case-study-content.page-section
       .row
