@@ -1,0 +1,52 @@
+- extends "work/_casestudy.html.haml"
+
+- set active_nav = "work"
+- set page_title = "Our Work | SkinnyMint"
+- set meta_desc = "Learn more about our work for SkinnyMint, a slimming tea delivery and e-commerce service."
+
+- set case_study_class = "skinnymint"
+- set case_study_type = "Project"
+- set case_study_name = "SkinnyMint"
+- set case_study_headline = "Reach your health goals with teatox journey"
+- set case_study_link_url = "//skinnymint.com"
+
+- block case_study_lead_content
+  %p.lead
+    SkinnyMint delivers healthy and effective slimming teas to your doorstep. We worked with Neo to deliver a beautiful e-commerce website.
+
+- block case_study_details
+  %ul
+    %li Designed in 2014
+    %li Responsive website
+    %li E-commerce
+
+- block case_study_services
+  %ul
+    %li Art Direction
+    %li Web Design
+
+- block case_study_credits
+  %ul
+    %li Pizza Yap
+
+- block case_study_content
+
+  %p.image
+    %img(src="/assets/img/case-study-skinnymint-1.jpg")
+
+  %p.image
+    %img(src="/assets/img/case-study-skinnymint-2.jpg")
+
+- block case_study_related
+  .medium-3.columns.end
+    .bellabox.work-panel
+      %a(href="#{path('work_bellabox')}")
+        %i.client-logos-large-sprite.client-logos-large-bellabox(title="Bellabox") Bellabox
+  .medium-3.columns.end
+    .aiji.work-panel
+      %a(href="#{path('work_aiji')}")
+        %i.client-logos-large-sprite.client-logos-large-aiji(title="爱己") 爱己
+  .medium-3.columns
+    .travelmob.work-panel
+      %a(href="#{path('work_travelmob')}")
+        %i.client-logos-large-sprite.client-logos-large-travelmob(title="travelmob") travelmob

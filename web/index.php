@@ -91,6 +91,11 @@ $app->get('/work/aiji', function() use ($app) {
 })
 ->bind('work_aiji');
 
+$app->get('/work/skinnymint', function() use ($app) {
+    return $app['twig']->render('work/skinnymint.html.haml');
+})
+->bind('work_skinnymint');
+
 $app->error(function (\Exception $e, $code) use ($app) {
     switch ($code) {
         case 404:
