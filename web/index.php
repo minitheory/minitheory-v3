@@ -101,6 +101,11 @@ $app->get('/work/shopabout', function() use ($app) {
 })
 ->bind('work_shopabout');
 
+$app->get('/work/mesitis', function() use ($app) {
+    return $app['twig']->render('work/mesitis.html.haml');
+})
+->bind('work_mesitis');
+
 $app->error(function (\Exception $e, $code) use ($app) {
     switch ($code) {
         case 404:
