@@ -15,37 +15,183 @@
       .medium-10.medium-centered.columns.align-center
         %h2.page-section-header
           We are big on work-life balance, having fun, learning and contributing
-          to the design community.
+          to the design community
         %p.lead
           At Minitheory, we help companies craft great user experiences for
           their products and services. You will experience the fun and
           excitement of being part of a young, fast-growing team working with
           companies from Silicon Valley, Singapore, China and beyond.
-
     .row
       %hr
 
     .row
+      .medium-10.medium-centered.columns
+        %h2.page-section-header.align-center
+          Culture Comes First
+    .row
+      .medium-6.columns
+        %p
+          We’re a team of problem solvers who believe that design can play a
+          strategic role in creating products. Design isn’t just the job of
+          designers. We believe that developing great products is a
+          multi-disciplinary, collaborative process. Craftsmanship is important
+          to us because we care about our users and clients. Their joy gives our
+          work meaning.
+      .medium-6.columns
+        %p
+          Work should be meaningful enough to be fulfilling, and challenging
+          enough for personal growth. Throw in a healthy sense of humour and
+          you've got the perfect environment for doing your life's work.
+
+      .row
+        .culture-photos.medium-12.columns
+          %ul.small-block-grid-2.medium-block-grid-4
+            - for i in 1..8
+              %li
+                %img(src="/assets/img/about-culture-#{i}.jpg")
+
+      .row.page-section.half-padding
+        .medium-6.columns
+          %h2 There's always more to learn
+          %p
+            Learning and self-improvement are a huge part of our culture. We want
+            our team to challenge themselves, learn new skills, try out new things
+            and grow together. Sharing sessions, learning trips are just some
+            methods we adopt. You'll also see us a lot at workshops, meetups and
+            conferences.
+
+          %h2 We're platform agnostic
+          %p
+            We don't define ourselves by the tools or processes we use. We choose
+            the most suitable one for the job. Besides, technology constantly
+            changes. Software currently takes the form of web based applications,
+            mobile apps and native desktop applications. Who knows what's next?
+
+          %h2 We're in perpetual beta
+          %p
+            The tech industry moves at breakneck speed. While that excites us, it
+            also means what worked a few months ago might change overnight. To
+            keep up, we constantly experiment with new ways to do things better.
+            Here’s a few things we’ve been experimenting with lately:
+          %ul.service-panel-activities
+            %li Lean UX
+            %li UX within Agile teams
+            %li Frontend style guides
+            %li Component libraries
+            %li Atomic design
+            %li HTML wireframes
+            %li Element collages
+            %li Visual inventories
+        .medium-6.columns
+          %img(src="/assets/img/about-culture-minitheory.jpg")
+
+    .row
+      %hr
+    .row.page-section.half-padding
       .medium-9.medium-centered.columns.align-center
-        %h2.page-section-header We're always on the lookout for great talent.
+        %h2.page-section-header We're always on the lookout for great talent
         %p.lead
           We're always on the lookout for full-time hires or freelance
-          engagements. Send your CV and work to jobs@minitheory.com. Tell us why
-          you want to join Minitheory and why you think you'd be a good match.
+          engagements. Send your CV and work to
+          %a(href="mailto:jobs@minitheory.com")jobs@minitheory.com
+          Tell us why you want to join Minitheory and why you think you'd be a good match.
+        %a.button(href="mailto:jobs@minitheory.com") Apply Now
 
     .row
       %hr
 
-    .row
+    .row.page-section.half-padding
       .medium-12.columns
         %h2.page-section-header 8 reasons to work at Minitheory
 
-  .page-section.half-padding.theme-blue-gradient
+    .row.align-center.page-section.half-padding
+      .medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/icon_WorkLifeBalance@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/icon_WorkLifeBalance.png" alt="")
+        %h3 Work-life Balance
+        %p We don't believe in burning you out with soul-crushing late nights.
+
+      .medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Icon_Flexibility@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Icon_Flexibility.png" alt="")
+        %h3 Flexiblity
+        %p Got a family errand to run? No worries! Talk to us and we'll make arrangements.
+
+      .medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Icon_Learning@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Icon_Learning.png" alt="")
+        %h3 Learning
+        %p We have a sizable conference budget for you to get out there and learn.
+
+      .medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Icon_Geography@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Icon_Geography.png" alt="")
+        %h3 Geography
+        %p We’re located in a sunny city and perfect for weekend getaways.
+
+    .row.align-center.page-section.half-padding
+      .medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Icon_Health@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Icon_Health.png" alt="")
+        %h3 Health
+        %p We’ve got you covered in case you fall sick.
+
+      .medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Icon_Dental@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Icon_Dental.png" alt="")
+        %h3 Dental
+        %p Keep smiling with annual checkups.
+
+      .medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Icon_TimeOff@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Icon_TimeOff.png" alt="")
+        %h3 Time off
+        %p We’re flexible with vacation days. Take a break when you need to.
+
+      .medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Icon_Culture@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Icon_Culture.png" alt="")
+        %h3 Culture
+        %p Vibrant company culture where everyday is meaningful.
+
+  .page-section.theme-blue-gradient
     .row
       .align-center.medium-12.columns
         %h2.page-section-header Everything is just a short walk away
 
-  .page-section.half-padding
     .row
-      .medium-12.columns
-        %h2.page-section-header At Minitheory we prefer
+      .align-center.medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Location_Maxwell@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Location_Maxwell.png" alt="")
+        %p
+        %p Maxwell Food Center
+
+      .align-center.medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Location_CBD@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Location_CBD.png" alt="")
+        %p
+        %p Central Business District
+
+      .align-center.medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Location_RedDotMuseum@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Location_RedDotMuseum.png" alt="")
+        %p
+        %p Red Dot Design Museum
+
+      .align-center.medium-3.columns
+        %picture
+          %source(srcset="/assets/img/jobs/Location_HipsterCafes@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %img(srcset="/assets/img/jobs/Location_HipsterCafes.png" alt="")
+        %p
+        %p Lots of Hipsters Cafes
