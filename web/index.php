@@ -51,6 +51,11 @@ $app->get('/contact', function() use ($app) {
 })
 ->bind('contact');
 
+$app->get('/jobs', function() use ($app) {
+    return $app['twig']->render('jobs.html.haml');
+})
+->bind('jobs');
+
 $app->get('/services', function() use ($app) {
     return $app['twig']->render('services.html.haml');
 })
