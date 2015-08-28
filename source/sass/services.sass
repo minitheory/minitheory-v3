@@ -1,25 +1,48 @@
 .service-panel
   margin-bottom: rem-calc(50)
+  border-bottom: 1px solid $border-color
   ul
     font-weight: $font-weight-lighter
+  &:first-child
+    margin-top: rem-calc(50)
 
-.service-panel-header
-  font-size: rem-calc(27)
+.service-panel-image
+  width: 170px
+  float: left
+  picture
+    width: 110px
+    display: block
 
-.service-panel-details
-  margin-top: rem-calc(50)
-  > .row
-    > .columns
-      padding: rem-calc(13)
-    > .columns:first-child
-      border-right: solid 1px $border-color
-      @media #{$small-only}
-        border-right: none
-  .service-panel-header
-    border-bottom: solid 1px $border-color
-    margin: 0
-    padding-bottom: rem-calc(15)
-    @media #{$small-only}
-      border-bottom: none
-  h4
-    font-size: rem-calc(20)
+.service-panel-text
+  overflow: hidden
+  margin-bottom: rem-calc(30)
+
+.service-panel-activities
+  line-height: 1.22
+  list-style: none
+  margin: rem-calc(40) 0 0
+  padding: 0
+  overflow: hidden
+
+  li
+    width: 33.33333%
+    float: left
+    background: url("../img/tick.svg") no-repeat 22px 6px
+    padding-left: 50px
+    padding-right: 15px
+    margin-bottom: rem-calc(20)
+    &:nth-child(3n + 1)
+      clear: left
+
+@media #{$small-only}
+  .service-panel-image
+    float: none
+    display: block
+    width: auto
+    margin-bottom: rem-calc(20)
+    picture
+      margin: 0 auto
+  .service-panel-text
+    text-align: center
+  .service-panel-activities
+    text-align: left

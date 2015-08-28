@@ -1,91 +1,109 @@
 - extends "layouts/layout.html.haml"
 
 - set active_nav = "services"
-- set page_title = "Design Services for Product Teams"
+- set page_title = "List of services"
 - set meta_desc = "We help our clients by offering Product, User Interface, and Web Design."
 
 - block page_content
   .page-section.half-padding.theme-blue-gradient
     .row
       .align-center.medium-12.columns
-        %h1 Design services for product teams
+        %h1 List of services
 
-  .page-section.half-padding.theme-light-bg
+  .page-section.half-padding
     .row
-      .medium-12.columns
+      .medium-8.medium-offset-2.columns.align-center
         %h2.page-section-header What can we do for you?
+        %p
+          We provide and carry out a number of activities and services to deliver your product or project.
+          %span.break The following is a list of some of these services and activities.
+    
+    .row
+      .medium-10.medium-offset-1.columns
+        .service-panel
+          .service-panel-image
+            %picture
+              %source(srcset="/assets/img/icon-research@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+              %source(srcset="/assets/img/icon-research@3x.png" media="(min-resolution: 288dpi), (-webkit-min-device-pixel-ratio: 3)")
+              %img(srcset="/assets/img/icon-research.png" alt="")
+          .service-panel-text
+            %h2 Learning
+            %p
+              We love computers, but it’s unfortunate that some software make us feel like idiots. We want to change that. We expect software to be intuitively designed &mdash; and ultimately, useful.
+            %ul.service-panel-activities
+              %li Contextual inquiry
+              %li Interviews and focus groups
+              %li Retrospective and progress review
 
-    .service-panel.row
-      .medium-4.columns
-        %img(src="/assets/img/services-ui.jpg")
-      .medium-8.columns
-        .service-panel-details
-          %h3.service-panel-header Increase customer satisfaction with an intuitive interface
-          .row
-            .medium-8.columns
-              %ul
-                %li Build the right features and make users fall in love with your SaaS product
-                %li Satisfied customers who love your product are more likely to pay and stick around. That's always good news.
-            .medium-4.columns
-              %h4 What we'll do for you
-              %ul
-                %li Usability research
-                %li Interaction design
-                %li Visual interface design
+        .service-panel
+          .service-panel-image
+            %picture
+              %source(srcset="/assets/img/icon-design@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+              %source(srcset="/assets/img/icon-design@3x.png" media="(min-resolution: 288dpi), (-webkit-min-device-pixel-ratio: 3)")
+              %img(srcset="/assets/img/icon-design.png" alt="")
+          .service-panel-text
+            %h2 Designing
+            %p
+              We love computers, but it’s unfortunate that some software make us feel like idiots. We want to change that. We expect software to be intuitively designed &mdash; and ultimately, useful.
+            %ul.service-panel-activities
+              %li Content inventory and audit
+              %li Ideation workshop
+              %li Key assumptions and risks identification
+              %li User experience audit
+              %li User journey mapping
 
-    .service-panel.row
-      .medium-4.columns
-        %img(src="/assets/img/services-tools.jpg")
-      .medium-8.columns
-        .service-panel-details
-          %h3.service-panel-header Give them better tools, increase productivity in your company
-          .row
-            .medium-8.columns
-              %ul
-                %li Increase employee happiness with more intuitive work
-                %li We'll study workflows to make sure the software is designed according to how they work
-            .medium-4.columns
-              %h4 What we'll do for you
-              %ul
-                %li Usability research
-                %li Interaction design
-                %li Visual interface design
+        .service-panel
+          .service-panel-image
+            %picture
+              %source(srcset="/assets/img/icon-product@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+              %source(srcset="/assets/img/icon-product@3x.png" media="(min-resolution: 288dpi), (-webkit-min-device-pixel-ratio: 3)")
+              %img(srcset="/assets/img/icon-product.png" alt="")
+          .service-panel-text
+            %h2 Building
+            %p
+              We love computers, but it’s unfortunate that some software make us feel like idiots. We want to change that. We expect software to be intuitively designed  – and ultimately, useful. We want to change that. We expect software to be intuitively designed  – and ultimately, useful. We love computers, but it’s unfortunate that some software make us feel like idiots.
+            %ul.service-panel-activities
+              %li Art and visual direction
+              %li Coding and development
+              %li Design and interaction specifications
+              %li Interface and interaction design
+              %li Product prototyping workshop
+              %li Technical specifications documentation
 
-    .service-panel.row
-      .medium-4.columns
-        %img(src="/assets/img/services-analytics.jpg")
-      .medium-8.columns
-        .service-panel-details
-          %h3.service-panel-header Increase conversion rates for your ecommerce website
-          .row
-            .medium-8.columns
-              %ul
-                %li We look at your numbers to find out what's wrong
-                %li Conduct usability testing to find out why
-                %li Give recommendations based on research data and best practices
-            .medium-4.columns
-              %h4 What we'll do for you
-              %ul
-                %li Conversion funnel analysis
-                %li Expert review
-                %li Analytics review
-                %li Usability testing
+        .service-panel
+          .service-panel-image
+            %picture
+              %source(srcset="/assets/img/icon-strategy@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+              %source(srcset="/assets/img/icon-strategy@3x.png" media="(min-resolution: 288dpi), (-webkit-min-device-pixel-ratio: 3)")
+              %img(srcset="/assets/img/icon-strategy.png" alt="")
+          .service-panel-text
+            %h2 Measuring
+            %p
+              We love computers, but it’s unfortunate that some software make us feel like idiots. We want to change that. We expect software to be intuitively designed  – and ultimately, useful. We want to change that. We expect software to be intuitively designed  – and ultimately, useful. We love computers, but it’s unfortunate that some software make us feel like idiots.
+            %ul.service-panel-activities
+              %li Analytics review
+              %li Cohort analysis
+              %li Funnel analysis
+              %li Goal analysis
+              %li Task analysis
 
-    .service-panel.row
-      .medium-4.columns
-        %img(src="/assets/img/services-style-guide.jpg")
-      .medium-8.columns
-        .service-panel-details
-          %h3.service-panel-header Build a frontend framework to help your dev team ship faster
-          .row
-            .medium-8.columns
-              %ul
-                %li Provide art direction for visual design
-                %li Good solid frontend foundation for your development team to work with
-                %li Specs and style guides provide consistency in visual design
-            .medium-4.columns
-              %h4 What we'll do for you
-              %ul
-                %li Interaction design
-                %li Visual interface design
-                %li Style guide creation
+    .row
+      .align-center.medium-10.medium-centered.columns
+        .contact.page-section.half-padding
+          %h1 Have a project in mind? Let's talk.
+
+          %ul
+            %li
+              %img(src="/assets/img/contact-weimeng.png")
+              %span.break Lee Wei Meng
+              %span.break Product Strategist
+            %li
+              %img(src="/assets/img/contact-mike.png")
+              %span.break Mike Chen
+              %span.break CEO and Co-Founder
+            %li
+              %img(src="/assets/img/contact-sylvia.png")
+              %span.break Sylvia Ng
+              %span.break Project Manager
+
+          %a.button(href="mailto:hi@minitheory.com") Email Us
