@@ -30,4 +30,7 @@
         %p.location
           Our office is located at
           %span.address.break 4B Jiak Chuan Road, Singapore 089261
-        %img(src="/assets/img/contact-location.jpg")
+        %picture
+          %source(srcset="/assets/img/Building@2x.png" media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)")
+          %source(srcset="/assets/img/Building@3x.png" media="(min-resolution: 288dpi), (-webkit-min-device-pixel-ratio: 3)")
+          %img(srcset="/assets/img/Building.png" alt="")
