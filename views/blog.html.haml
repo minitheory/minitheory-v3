@@ -1,0 +1,40 @@
+- extends "layouts/layout.html.haml"
+
+- set active_nav = "blog"
+- set page_title = "Blog"
+- set meta_desc = "Our latest thoughts on design, process and culture."
+
+- block page_content
+  .page-section.half-padding.theme-blue-gradient
+    .row
+      .align-center.medium-12.columns
+        %h1 The Blog
+
+  .page-section.half-padding
+    .row
+      .medium-10.medium-centered.columns.align-center
+        %h2
+          Our thoughts on design, process and culture
+    .row
+      .medium-10.medium-centered.columns
+        .page-section.half-padding
+          %ul.blog-post-list
+            %li.blog-post
+              %a(href="https://medium.com/minitheory-design/optimising-ux-design-process-for-agile-teams-60befbf00ca3" target='_blank')
+                %h3 Optimising UX design process for agile teams
+              %p.blog-post-author
+                Written by
+                %a(href="https://twitter.com/zenan_liu" target='_blank' ) Zenan Liu
+                and
+                %a(href="https://twitter.com/catsgomeep" target='_blank' ) Charmaine Low
+              %p
+                How can UX designers produce high quality work in a fast-paced
+                sprint-based agile team? Does the systematic UX design process
+                make it inherently contradictory with agile principles? After working
+                closely with one of our client’s agile teams for almost a year, we
+                learned the many complexities a UX designer would encounter when integrating
+                user centred design into an engineering-driven team. Understanding these
+                complexities allows us to adopt an efficient new design process that helps
+                produce better designed products faster.
+              %br
+              %a.button(href="https://medium.com/minitheory-design/optimising-ux-design-process-for-agile-teams-60befbf00ca3" target='_blank' ) Read on Medium

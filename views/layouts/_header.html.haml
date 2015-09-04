@@ -18,6 +18,6 @@
         %li
           %a(href="#{path('about_company')}" class=(active_nav == "about" ? "active" : "")) About
         %li
-          %a(href="http://blog.minitheory.com") Blog
+          %a(href="#{path('blog')}" class=(active_nav == "blog" ? "active" : "")) Blog
         %li
           %a.dark-border.button(href="#{path('contact')}") Get in touch
