@@ -56,6 +56,11 @@ $app->get('/jobs', function() use ($app) {
 })
 ->bind('jobs');
 
+$app->get('/global', function() use ($app) {
+    return $app['twig']->render('global.html.haml');
+})
+->bind('global');
+
 $app->get('/blog', function() use ($app) {
     return $app['twig']->render('blog.html.haml');
 })

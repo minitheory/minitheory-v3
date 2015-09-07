@@ -15,4 +15,5 @@ $(document).ready(function() {
     gutter: 10,
     itemSelector: '.work-panel'
   });
+
 });
